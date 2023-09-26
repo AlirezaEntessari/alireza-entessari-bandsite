@@ -1,0 +1,25 @@
+@use './partials/variables' as *;
+@use './partials/mixins' as *;
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+//   font-family: ;
+}
+
+@include mobile {
+    .bandsite {
+        padding-top: 0;
+        margin-top: 0;
+        background-color: #323232;
+        color: #FFFFFF;
+    }
+
+        .bandsite__sub-header{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+
+        }
+}
