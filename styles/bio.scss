@@ -1,25 +1,390 @@
 @use './partials/variables' as *;
 @use './partials/mixins' as *;
+@use './partials/fonts' as *;
 
 html,
 body {
   margin: 0;
   padding: 0;
-//   font-family: ;
+  font-family: 'Avenir';
 }
 
-@include mobile {
-    .bandsite {
-        padding-top: 0;
-        margin-top: 0;
-        background-color: #323232;
-        color: #FFFFFF;
+
+.bandsite {
+    padding-top: 0;
+    margin-top: 0;
+    background-color: #323232;
+    color: #FFFFFF;
+    font-size: 24px;
+    line-height: 32px;
+    font-weight: 700;
+    text-align: center;
+
+
+    &__sub-header {
+       display: flex;
+       justify-content: space-evenly;
     }
 
-        .bandsite__sub-header{
-            display: flex;
-            flex-direction: row;
-            justify-content: center;
+    &__hero {
+      background-image: url("../assets/images/Images/hero-bio.jpg");
+      margin:0;
+      color: #FFFFFF;
+      background-size: cover;
+      // padding-top: 400px;
+      font-size: 24px;
+      background-repeat: no-repeat;
+      background-position: center center;
+      height: 300px;
+      display: flex;
+      padding-top: 300px;
+      vertical-align: bottom;
+      padding-left: 40px;
 
-        }
+    }
+
 }
+
+.musicians-description {
+
+  padding-top: 24px;
+
+    h2{
+      padding: 16px;
+    }
+
+    img {
+      padding: 16px;
+    }
+
+    &__quote{
+      font-weight: 700;
+      padding: 16px;
+    }
+
+    &__quote-second {
+      font-weight: 700;
+      padding: 16px;
+    }
+
+    &__bees-knees{
+      padding: 16px;
+      font-weight: 600;
+    }
+
+    &__bees-knees-description{
+      padding: 16px;
+    }
+
+}
+
+.photo-gallery {
+    background-color: #FAFAFA;
+    padding: 16px;
+
+    img{
+      padding: 16px;
+    }
+
+}
+
+.footer {
+    background-color: #323232;
+    color: #FFFFFF;
+    padding: 16px;
+
+    &__facebook {
+      padding-left: 32px;
+    }
+
+    &__twitter {
+      padding-left: 32px;
+    }
+
+    &__management {
+      padding-top: 16px;
+    }
+
+    &__address {
+      padding-top: 16px;
+    }
+
+    &__email--bees-knees {
+      padding-top: 16px;
+    }
+
+    &__group {
+      padding-top: 16px;
+    }
+
+    &__agent {
+      padding-top: 16px;
+    }
+
+    &__email--pearl {
+      padding-top: 16px;
+    }
+
+    &__entertainment {
+      padding-top: 16px;
+    }
+
+    &__booking-agent {
+      padding-top: 16px;
+    }
+
+    &__email--entertainment{
+      padding-top: 16px;
+    }
+
+    &__bandsite {
+      padding-top: 32px;
+      font-size: 32px;
+    }
+
+}
+
+@include tablet {
+    .bandsite {
+      background-color: #323232;
+      color: #FFFFFF;
+
+      &__container {
+        display: flex;
+        justify-content: flex-start;
+        padding: 24px;
+      }
+
+      h2 {
+        margin-right: 60px;
+        font-size: 36px;
+        line-height: 44px;
+        font-weight: 700;
+        font-weight: 400;
+      }
+
+      &__sub-header {
+        font-size: 24px;
+        line-height: 32px;
+        font-weight: 400;
+        padding: 12px;
+      }
+
+
+      &__space-between{
+        width: 48px;
+      }
+
+      &__hero {
+        background-image: url("../assets/images/Images/hero-bio.jpg");
+        margin:0;
+        color: #FFFFFF;
+        background-size: cover;
+        // padding-top: 400px;
+        font-size: 60px;
+        line-height: 68px;
+        background-repeat: no-repeat;
+        background-position: center center;
+        height: 700px;
+        display: flex;
+        padding-top: 550px;
+        vertical-align: bottom;
+        padding-left: 40px;
+        
+      }
+    }
+
+    .musicians-description {
+      margin: 36px;
+      padding: 24px;
+
+        h2 {
+          font-size: 36px;
+          line-height: 44px;
+          font-weight: 700;
+        }
+
+        img {
+          display: flex;
+          margin-left: 70px;
+        }
+
+        &__quote {
+          font-size: 24px;
+          line-height: 32px;
+          display: flex;
+          justify-content: center;
+          font-weight: 700;
+        }
+
+        &__quote-second {
+          padding-top: 0;
+          font-weight: 600;
+          margin-left: 140px;
+        }
+
+        &__bees-knees {
+          margin-left: 140px;
+          font-size: 24px;
+          padding-bottom: 0;
+        }
+
+        &__bees-knees-description {
+          padding-top: 0;
+          width: 480px;
+          padding-left: 160px;
+          display: inline-block;
+        }
+
+    }
+
+    .photo-gallery {
+      background-color: #FAFAFA;
+      padding: 36px;
+      height: 1450px;
+
+      h2 {
+        font-size: 36px;
+        line-height: 44px;
+        font-weight: 700;
+        padding-left: 30px;
+      }
+
+      &__container {
+        display: flex;
+        justify-content: space-between;
+        width: 500px;
+        height: 500px;
+        padding-left: 10px;
+      }
+
+      &__container img {
+        width: 530px;
+        height: 320px;
+        padding: 36px;
+      }
+
+      &__container-1 {
+        display: inline-block;
+      }
+
+      &__container-2 {
+        display: inline-block;
+      }
+
+      &__container-3 {
+        display: inline-block;
+      }
+
+    }
+
+    .footer {
+      background-color: #323232;
+      color: #FFFFFF;
+      position: relative;
+
+        &__bandsite {
+          padding: 8px;
+        }
+
+        h2 {
+          font-size: 36px;
+          line-height: 44px;
+          font-weight: 700;
+          padding-right: 24px;
+        }
+
+        &__container--1 {
+          padding-left: 150px;
+          display: flex;
+          justify-content: flex-start;
+        }
+
+        &__social-media {
+          padding-top: 35px;
+          padding-left: 36px;
+        }
+
+        &__instagram {
+          width: 40px;
+          height: 30px;
+        }
+
+        &__facebook {
+          width: 40px;
+          height: 30px;
+        }
+
+        &__twitter {
+          width: 40px;
+          height: 30px;
+        }
+
+        &__container--1-bandsite {
+          padding-top: 0;
+          position: absolute;
+          top: 9px;
+          left: 1100px;
+        }
+
+        &__container--2 {
+          padding-left: 150px;
+        }
+
+        &__container--2-gregg {
+          position: absolute;
+          top: 120px;
+          left: 570px;
+        }
+
+        &__container--2-whyte {
+          position: absolute;
+          top: 120px;
+          left: 940px;
+        }
+
+        &__container--3 {
+          padding-left: 150px;
+        }
+
+        &__container--3-agent {
+          position: absolute;
+          top: 219px;
+          left: 570px;
+        }
+
+        &__container--3-agent-int {
+          position: absolute;
+          top: 219px;
+          left: 940px;
+        }
+
+        &__container--4 {
+          padding-left: 150px;
+          padding-bottom: 16px;
+        }
+
+        &__container--4-gregg {
+          position: absolute;
+          top: 319px;
+          left: 570px;
+        }
+
+        &__container--4-whyte {
+          position: absolute;
+          top: 319px;
+          left: 940px;
+        }
+
+        &__copyright {
+          padding-left: 150px;
+        }
+
+    
+    }
+
+}
+
+
+
+        
