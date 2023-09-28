@@ -83,7 +83,7 @@ body {
 }
 .musicians-description__bees-knees {
   padding: 16px;
-  font-weight: 600;
+  font-weight: 700;
 }
 .musicians-description__bees-knees-description {
   padding: 16px;
@@ -184,6 +184,8 @@ body {
   .musicians-description {
     margin: 36px;
     padding: 24px;
+    font-size: 14px;
+    line-height: 22px;
   }
   .musicians-description h2 {
     font-size: 36px;
@@ -199,7 +201,7 @@ body {
     line-height: 32px;
     display: flex;
     justify-content: center;
-    font-weight: 700;
+    font-weight: 600;
   }
   .musicians-description__quote-second {
     padding-top: 0;
@@ -210,6 +212,7 @@ body {
     margin-left: 140px;
     font-size: 24px;
     padding-bottom: 0;
+    font-weight: 700;
   }
   .musicians-description__bees-knees-description {
     padding-top: 0;
@@ -253,6 +256,9 @@ body {
     background-color: #323232;
     color: #FFFFFF;
     position: relative;
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 400;
   }
   .footer__bandsite {
     padding: 8px;
