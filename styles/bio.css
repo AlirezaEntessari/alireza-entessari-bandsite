@@ -55,17 +55,24 @@ body {
 }
 .bandsite__sub-header {
   display: flex;
-  justify-content: space-evenly;
+  text-decoration: none;
+  list-style-type: none;
+  padding: 0;
+  margin-bottom: 0;
+}
+.bandsite__li {
+  width: 50%;
+  font-weight: 700;
+  padding-bottom: 1rem;
 }
 .bandsite__sub-header--nav {
-  margin-left: 40px;
   text-decoration: none;
   color: #FFFFFF;
   margin-top: 39px;
+  margin: 0;
 }
-.bandsite__sub-header--nav:hover {
+.bandsite__sub-header li:hover {
   border-bottom: 3px solid #FFFFFF;
-  font-weight: 700;
 }
 .bandsite__hero {
   background-image: url("../assets/images/Images/hero-bio.jpg");
@@ -74,9 +81,8 @@ body {
   background-size: cover;
   font-size: 24px;
   background-repeat: no-repeat;
-  background-position: center center;
+  background-position: center;
   height: 300px;
-  display: flex;
   padding-top: 300px;
   vertical-align: bottom;
   padding-left: 40px;
@@ -89,6 +95,7 @@ body {
   padding: 16px;
 }
 .musicians-description img {
+  width: 90%;
   padding: 16px;
 }
 .musicians-description__quote {
@@ -112,7 +119,7 @@ body {
   padding: 16px;
 }
 .photo-gallery img {
-  padding: 16px;
+  width: 90%;
 }
 
 .footer {
@@ -172,43 +179,30 @@ body {
   }
   .bandsite__sub-header {
     display: flex;
-    justify-content: space-evenly;
+    padding: 0;
+    margin-bottom: 0;
   }
   .bandsite__sub-header--nav {
     margin-left: 40px;
     text-decoration: none;
     color: #FFFFFF;
     margin-top: 39px;
+    padding: 36px;
   }
-  .bandsite__sub-header--nav:hover {
+  .bandsite__sub-header li:hover {
     border-bottom: 3px solid #FFFFFF;
     font-weight: 700;
+  }
+  .bandsite__li {
+    width: 50%;
+    font-weight: 700;
+    padding-bottom: 1rem;
   }
   .bandsite h2 {
     margin-right: 60px;
     font-size: 36px;
     line-height: 44px;
     font-weight: 400;
-  }
-  .bandsite__sub-header {
-    font-size: 24px;
-    line-height: 32px;
-    font-weight: 400;
-  }
-  .bandsite__hero {
-    background-image: url("../assets/images/Images/hero-bio.jpg");
-    margin: 0;
-    color: #FFFFFF;
-    background-size: cover;
-    font-size: 60px;
-    line-height: 68px;
-    background-repeat: no-repeat;
-    background-position: center center;
-    height: 700px;
-    display: flex;
-    padding-top: 550px;
-    vertical-align: bottom;
-    padding-left: 40px;
   }
   .musicians-description {
     margin: 36px;
@@ -252,7 +246,6 @@ body {
   .photo-gallery {
     background-color: #FAFAFA;
     padding: 36px;
-    height: 1450px;
   }
   .photo-gallery h2 {
     font-size: 36px;
@@ -262,15 +255,12 @@ body {
   }
   .photo-gallery__container {
     display: flex;
-    justify-content: space-between;
-    width: 500px;
-    height: 500px;
-    padding-left: 10px;
+    flex-wrap: wrap;
+    width: 90%;
+    gap: 24px;
   }
   .photo-gallery__container img {
-    width: 530px;
-    height: 320px;
-    padding: 36px;
+    width: 40%;
   }
   .photo-gallery__container-1 {
     display: inline-block;
@@ -288,6 +278,7 @@ body {
     font-size: 14px;
     line-height: 20px;
     font-weight: 400;
+    margin-top: 5rem;
   }
   .footer__bandsite {
     padding: 8px;
@@ -323,7 +314,7 @@ body {
     padding-top: 0;
     position: absolute;
     top: 9px;
-    left: 1100px;
+    right: 1rem;
   }
   .footer__container--2 {
     padding-left: 150px;
@@ -399,32 +390,31 @@ body {
   }
   .bandsite__sub-header {
     display: flex;
+    text-decoration: none;
+    list-style-type: none;
+    padding: 0;
+    margin-bottom: 0;
     justify-content: space-evenly;
   }
   .bandsite__sub-header--nav {
-    margin-left: 40px;
     text-decoration: none;
     color: #FFFFFF;
     margin-top: 39px;
-  }
-  .bandsite__sub-header--nav:hover {
-    border-bottom: 3px solid #FFFFFF;
-    font-weight: 700;
-  }
-  .bandsite__hero {
-    background-image: url("../assets/images/Images/hero-bio.jpg");
     margin: 0;
-    color: #FFFFFF;
-    background-size: cover;
-    font-size: 60px;
-    line-height: 68px;
-    background-repeat: no-repeat;
-    background-position: center center;
-    height: 700px;
-    display: flex;
-    padding-top: 550px;
-    vertical-align: bottom;
-    padding-left: 250px;
+    padding: 0;
+    padding: 36px;
+    margin-top: 24px;
+  }
+  .bandsite nav {
+    padding-top: 18px;
+  }
+  .bandsite__li {
+    width: 50%;
+    font-weight: 700;
+    padding-bottom: 1rem;
+  }
+  .bandsite__sub-header li:hover {
+    border-bottom: 3px solid #FFFFFF;
   }
   .musicians-description {
     margin: 36px;
@@ -472,7 +462,6 @@ body {
   .photo-gallery {
     background-color: #FAFAFA;
     padding: 36px;
-    height: 1450px;
     padding-bottom: 0px;
   }
   .photo-gallery h2 {
@@ -483,15 +472,12 @@ body {
   }
   .photo-gallery__container {
     display: flex;
-    justify-content: space-between;
-    width: 360px;
-    height: 360px;
-    padding-left: 16px;
+    flex-wrap: wrap;
+    gap: 36px;
+    justify-content: flex-end;
   }
   .photo-gallery__container img {
-    width: 530px;
-    height: 320px;
-    padding: 36px;
+    width: 30%;
   }
   .photo-gallery__container-1 {
     display: inline-block;
@@ -504,6 +490,7 @@ body {
     padding-bottom: 0;
   }
   .footer {
+    margin-top: 5rem;
     background-color: #323232;
     color: #FFFFFF;
     position: relative;
@@ -547,7 +534,7 @@ body {
     padding-top: 0;
     position: absolute;
     top: 60px;
-    left: 1500px;
+    right: 3rem;
   }
   .footer__container--2 {
     padding-left: 200px;
