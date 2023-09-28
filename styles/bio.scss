@@ -26,6 +26,14 @@ body {
        justify-content: space-evenly;
     }
 
+    &__sub-header:hover{
+      border-bottom: 3px solid #FFFFFF;
+    }
+
+    &__container:hover {
+      border-bottom: 3px solid #FFFFFF;
+    }
+
     &__hero {
       background-image: url("../assets/images/Images/hero-bio.jpg");
       margin:0;
@@ -398,22 +406,28 @@ body {
       &__container {
         display: flex;
         justify-content: flex-start;
-        padding: 48px;
+        // padding: 48px;
+        // padding: 36px;
+        padding: 24px;
       }
 
       h2 {
-        margin-right: 90px;
+        margin-left: 120px;
         font-size: 36px;
         line-height: 44px;
         font-weight: 400;
-        padding: 36px;
+        // padding: 36px;
+        // padding: 24px;
+        padding: 20px;
       }
 
       &__sub-header {
         font-size: 24px;
         line-height: 32px;
         font-weight: 400;
-        padding: 48px;
+        // padding: 48px;
+        // padding: 36px;
+        padding: 32px;
       }
 
       &__space-between{

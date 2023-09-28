@@ -49,6 +49,12 @@ body {
   display: flex;
   justify-content: space-evenly;
 }
+.bandsite__sub-header:hover {
+  border-bottom: 3px solid #FFFFFF;
+}
+.bandsite__container:hover {
+  border-bottom: 3px solid #FFFFFF;
+}
 .bandsite__hero {
   background-image: url("../assets/images/Images/hero-bio.jpg");
   margin: 0;
@@ -347,20 +353,20 @@ body {
   .bandsite__container {
     display: flex;
     justify-content: flex-start;
-    padding: 48px;
+    padding: 24px;
   }
   .bandsite h2 {
-    margin-right: 90px;
+    margin-left: 120px;
     font-size: 36px;
     line-height: 44px;
     font-weight: 400;
-    padding: 36px;
+    padding: 20px;
   }
   .bandsite__sub-header {
     font-size: 24px;
     line-height: 32px;
     font-weight: 400;
-    padding: 48px;
+    padding: 32px;
   }
   .bandsite__space-between {
     width: 60px;
