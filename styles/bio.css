@@ -70,22 +70,30 @@ body {
   color: #FFFFFF;
   margin-top: 39px;
   margin: 0;
+  font-size: 20px;
+  font-weight: 400;
 }
 .bandsite__sub-header li:hover {
   border-bottom: 3px solid #FFFFFF;
 }
+.bandsite__sub-header--nav:hover {
+  font-weight: 700;
+}
 .bandsite__hero {
   background-image: url("../assets/images/Images/hero-bio.jpg");
-  margin: 0;
   color: #FFFFFF;
   background-size: cover;
-  font-size: 24px;
   background-repeat: no-repeat;
-  background-position: center;
   height: 300px;
-  padding-top: 300px;
-  vertical-align: bottom;
+  padding-top: 350px;
   padding-left: 40px;
+  display: flex;
+  padding-bottom: 225px;
+  font-size: 48px;
+}
+.bandsite__hero--title {
+  font-size: 38px;
+  font-weight: 500;
 }
 
 .musicians-description {
@@ -118,6 +126,9 @@ body {
   background-color: #FAFAFA;
   padding: 16px;
 }
+.photo-gallery__container {
+  margin-left: 2.5rem;
+}
 .photo-gallery img {
   width: 90%;
 }
@@ -126,6 +137,10 @@ body {
   background-color: #323232;
   color: #FFFFFF;
   padding: 16px;
+}
+.footer a {
+  text-decoration: none;
+  color: #FFFFFF;
 }
 .footer__facebook {
   padding-left: 32px;
@@ -170,6 +185,20 @@ body {
     background-color: #323232;
     color: #FFFFFF;
   }
+  .bandsite__sub-header li:hover {
+    border-bottom: 3px solid #FFFFFF;
+    font-weight: 700;
+    padding-bottom: 42px;
+  }
+  .bandsite__container {
+    display: flex;
+    padding-left: 30px;
+  }
+  .bandsite__sub-header {
+    font-size: 24px;
+    line-height: 32px;
+    font-weight: 400;
+  }
   .bandsite__container {
     padding-bottom: 0;
   }
@@ -179,30 +208,33 @@ body {
   }
   .bandsite__sub-header {
     display: flex;
+    text-decoration: none;
+    list-style-type: none;
     padding: 0;
     margin-bottom: 0;
+    justify-content: space-evenly;
   }
   .bandsite__sub-header--nav {
-    margin-left: 40px;
     text-decoration: none;
     color: #FFFFFF;
     margin-top: 39px;
+    margin: 0;
+    padding: 0;
     padding: 36px;
+    margin-top: 24px;
   }
-  .bandsite__sub-header li:hover {
-    border-bottom: 3px solid #FFFFFF;
-    font-weight: 700;
+  .bandsite nav {
+    padding-top: 18px;
   }
   .bandsite__li {
     width: 50%;
     font-weight: 700;
     padding-bottom: 1rem;
   }
-  .bandsite h2 {
-    margin-right: 60px;
-    font-size: 36px;
-    line-height: 44px;
-    font-weight: 400;
+  .bandsite__hero--title {
+    padding-left: 28px;
+    font-size: 72px;
+    font-weight: 500;
   }
   .musicians-description {
     margin: 36px;
@@ -217,50 +249,61 @@ body {
   }
   .musicians-description img {
     display: flex;
-    margin-left: 70px;
+    margin-left: 0;
   }
   .musicians-description__quote {
     font-size: 24px;
     line-height: 32px;
-    display: flex;
-    justify-content: center;
     font-weight: 600;
+    margin-left: 40px;
   }
   .musicians-description__quote-second {
     padding-top: 0;
     font-weight: 600;
-    margin-left: 140px;
+    margin-left: 50px;
   }
   .musicians-description__bees-knees {
-    margin-left: 140px;
+    margin-left: 38px;
+    padding-left: 0px;
     font-size: 24px;
     padding-bottom: 0;
     font-weight: 700;
   }
   .musicians-description__bees-knees-description {
     padding-top: 0;
-    width: 480px;
-    padding-left: 160px;
+    padding-left: 40px;
     display: inline-block;
+    font-size: 16px;
+  }
+  .musicians-description__container {
+    padding-right: 300px;
+    display: flex;
+    flex-wrap: row;
+    gap: 36px;
+    width: 80%;
   }
   .photo-gallery {
     background-color: #FAFAFA;
     padding: 36px;
   }
   .photo-gallery h2 {
-    font-size: 36px;
+    font-size: 48px;
     line-height: 44px;
     font-weight: 700;
     padding-left: 30px;
+    font-weight: 500;
+    margin-left: 32px;
   }
   .photo-gallery__container {
+    margin-left: 40px;
+    padding-left: 24px;
     display: flex;
     flex-wrap: wrap;
     width: 90%;
     gap: 24px;
   }
   .photo-gallery__container img {
-    width: 40%;
+    width: 30%;
   }
   .photo-gallery__container-1 {
     display: inline-block;
@@ -279,18 +322,24 @@ body {
     line-height: 20px;
     font-weight: 400;
     margin-top: 5rem;
+    margin-top: 0;
   }
   .footer__bandsite {
     padding: 8px;
+  }
+  .footer a {
+    text-decoration: none;
+    color: #FFFFFF;
   }
   .footer h2 {
     font-size: 36px;
     line-height: 44px;
     font-weight: 700;
-    padding-right: 24px;
+    margin-left: 0px;
+    font-weight: 500;
   }
   .footer__container--1 {
-    padding-left: 150px;
+    padding-left: 3rem;
     display: flex;
     justify-content: flex-start;
   }
@@ -313,51 +362,51 @@ body {
   .footer__container--1-bandsite {
     padding-top: 0;
     position: absolute;
-    top: 9px;
+    top: 3rem;
     right: 1rem;
   }
   .footer__container--2 {
-    padding-left: 150px;
+    padding-left: 52px;
   }
   .footer__container--2-gregg {
     position: absolute;
-    top: 120px;
-    left: 570px;
+    top: 121px;
+    left: 330px;
   }
   .footer__container--2-whyte {
     position: absolute;
-    top: 120px;
-    left: 940px;
+    top: 122px;
+    right: 130px;
   }
   .footer__container--3 {
-    padding-left: 150px;
+    padding-left: 52px;
   }
   .footer__container--3-agent {
     position: absolute;
-    top: 219px;
-    left: 570px;
+    top: 221px;
+    left: 330px;
   }
   .footer__container--3-agent-int {
     position: absolute;
-    top: 219px;
-    left: 940px;
+    top: 221px;
+    right: 145px;
   }
   .footer__container--4 {
-    padding-left: 150px;
-    padding-bottom: 16px;
+    padding-left: 52px;
   }
   .footer__container--4-gregg {
     position: absolute;
-    top: 319px;
-    left: 570px;
+    top: 322px;
+    left: 330px;
   }
   .footer__container--4-whyte {
     position: absolute;
-    top: 319px;
-    left: 940px;
+    top: 320px;
+    right: 60px;
   }
   .footer__copyright {
-    padding-left: 150px;
+    padding-top: 36px;
+    padding-left: 52px;
   }
 }
 @media screen and (min-width: 1280px) {
@@ -367,10 +416,9 @@ body {
   }
   .bandsite__container {
     display: flex;
-    justify-content: flex-start;
+    padding-left: 120px;
   }
   .bandsite h2 {
-    margin-left: 120px;
     font-size: 36px;
     line-height: 44px;
     font-weight: 400;
@@ -416,6 +464,11 @@ body {
   .bandsite__sub-header li:hover {
     border-bottom: 3px solid #FFFFFF;
   }
+  .bandsite__hero--title {
+    padding-left: 50px;
+    font-size: 90px;
+    font-weight: 500;
+  }
   .musicians-description {
     margin: 36px;
     padding: 24px;
@@ -434,29 +487,31 @@ body {
     padding-bottom: 36px;
   }
   .musicians-description__quote {
-    font-size: 24px;
+    font-size: 28px;
     line-height: 32px;
     display: flex;
     justify-content: center;
-    font-weight: 600;
+    font-weight: 500;
+    width: 900px;
+    margin-left: 150px;
   }
   .musicians-description__quote-second {
     padding-top: 0;
     font-weight: 600;
-    margin-left: 140px;
+    margin-left: 155px;
     font-size: 20px;
     font-weight: 500;
   }
   .musicians-description__bees-knees {
-    margin-left: 220px;
-    font-size: 24px;
+    margin-left: 170px;
+    font-size: 30px;
     padding-bottom: 0;
-    font-weight: 700;
+    font-weight: 600;
   }
   .musicians-description__bees-knees-description {
     padding-top: 0;
     width: 480px;
-    padding-left: 240px;
+    padding-left: 170px;
     display: inline-block;
   }
   .photo-gallery {
@@ -465,10 +520,12 @@ body {
     padding-bottom: 0px;
   }
   .photo-gallery h2 {
-    font-size: 36px;
+    font-size: 48px;
     line-height: 44px;
-    font-weight: 700;
+    font-weight: 500;
     padding-left: 52px;
+    margin-left: 100px;
+    padding-bottom: 24px;
   }
   .photo-gallery__container {
     display: flex;
@@ -494,9 +551,9 @@ body {
     background-color: #323232;
     color: #FFFFFF;
     position: relative;
-    font-size: 14px;
     line-height: 20px;
     font-weight: 400;
+    font-size: 16px;
   }
   .footer__bandsite {
     padding: 8px;
@@ -533,8 +590,8 @@ body {
   .footer__container--1-bandsite {
     padding-top: 0;
     position: absolute;
-    top: 60px;
-    right: 3rem;
+    top: 80px;
+    right: 15rem;
   }
   .footer__container--2 {
     padding-left: 200px;
@@ -574,12 +631,12 @@ body {
   }
   .footer__container--4-gregg {
     position: absolute;
-    top: 358px;
+    top: 372px;
     left: 570px;
   }
   .footer__container--4-whyte {
     position: absolute;
-    top: 356px;
+    top: 372px;
     left: 940px;
   }
   .footer__copyright {
