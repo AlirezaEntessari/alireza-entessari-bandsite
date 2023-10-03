@@ -15,8 +15,8 @@ body {
     margin-top: 0;
     background-color: #323232;
     color: #FFFFFF;
-    font-size: 24px;
-    line-height: 32px;
+    font-size: 1.5rem;
+    line-height: 2rem;
     font-weight: 700;
     text-align: center;
     padding-bottom: 0;
@@ -26,35 +26,30 @@ body {
     }
 
     &__logo {
-      height: 36px;
-      padding: 36px;
+      height: 2.25rem;
+      padding: 2.25rem;
     }
 
     &__sub-header{
       display: flex;
       text-decoration: none;
       list-style-type: none;
-      // border: 1px solid blue;
       padding: 0;
       margin-bottom: 0;
     }
 
     &__li {
-      // border: 1px solid yellow;
       width: 50%;
       font-weight: 700;
       padding-bottom: 1rem;
     }
 
-  
-
     &__sub-header--nav{
-      // margin-left: 40px;
       text-decoration: none;
       color: #FFFFFF;
-      margin-top: 39px;
+      margin-top: 2.4375rem;
       margin: 0;
-      font-size: 20px;
+      font-size: 1.25rem;
       font-weight: 400;
     }
 
@@ -66,30 +61,24 @@ body {
       font-weight: 700;
     }
 
-    // &__container:hover {
-    //   border-bottom: 3px solid #FFFFFF;
-    // }
 
     &__hero {
       background-image: url("../assets/images/Images/hero-bio.jpg");
-      // margin:0;
       color: #FFFFFF;
       background-size: cover;
-      // padding-top: 400px;
-      // font-size: 32px;
       background-repeat: no-repeat;
-      // background-position: center;
-      height: 300px;
-      padding-top: 350px;
-      // vertical-align: bottom;
-      padding-left: 40px;
+      height: 18.75rem;
+      padding-top: 21.875rem;
+      padding-left: 2.5rem;
       display: flex;
-      padding-bottom: 225px;
-      font-size: 48px;
+      padding-bottom: 14.0625rem;
+      font-size: 3rem;
+      background-color: #323232;
+      opacity: 90%;
     }
 
     &__hero--title {
-      font-size: 38px;
+      font-size: 2.375rem;
       font-weight: 500;
     }
 
@@ -97,41 +86,56 @@ body {
 
 .musicians-description {
 
-  padding-top: 24px;
+  padding-top: 1.5rem;
 
     h2{
-      padding: 16px;
+      padding: 1rem;
+      font-size: 2rem;
+      font-weight: 500;
     }
 
     img {
       width: 90%;
-      padding: 16px;
+      padding: 1rem;
     }
 
     &__quote{
-      font-weight: 700;
-      padding: 16px;
+      width: 80%;
+      font-weight: 500;
+      padding: 1rem;
+      font-size: 1.125rem;
+      padding-bottom: 0;
     }
 
     &__quote-second {
-      font-weight: 700;
-      padding: 16px;
+      font-weight: 500;
+      padding: 1rem;
+      font-size: 1.125rem;
     }
 
     &__bees-knees{
-      padding: 16px;
-      font-weight: 700;
+      font-size: 1.125rem;
+      padding: 1rem;
+      font-weight: 500;
+      padding-bottom: 0;
     }
 
     &__bees-knees-description{
-      padding: 16px;
+      padding: 1rem;
     }
 
 }
 
 .photo-gallery {
     background-color: #FAFAFA;
-    padding: 16px;
+    padding: 1rem;
+
+    h2 {
+      padding-left: 2.25rem;
+      font-size: 2rem;
+      font-size: 500;
+    }
+
 
     &__container {
       margin-left: 2.5rem;
@@ -141,14 +145,17 @@ body {
       width: 90%;
     }
 
-    
-
 }
 
 .footer {
     background-color: #323232;
     color: #FFFFFF;
-    padding: 16px;
+    padding: 1rem;
+
+    h2 {
+      font-size: 2rem;
+      font-weight: 500;
+    }
 
     a {
       text-decoration: none;
@@ -156,52 +163,65 @@ body {
     }
 
     &__facebook {
-      padding-left: 32px;
+      width: 2.5rem;
+      height: 1.875rem;
+      padding-left: 2rem;
     }
 
     &__twitter {
-      padding-left: 32px;
+      width: 2.5rem;
+      height: 1.875rem;
+      padding-left: 2rem;
     }
 
+     &__instagram {
+          width: 2.5rem;
+          height: 1.875rem;
+        }
+
     &__management {
-      padding-top: 16px;
+      padding-top: 1rem;
     }
 
     &__address {
-      padding-top: 16px;
+      padding-top: 1rem;
     }
 
     &__email--bees-knees {
-      padding-top: 16px;
+      padding-top: 1rem;
     }
 
     &__group {
-      padding-top: 16px;
+      padding-top: 1rem;
     }
 
     &__agent {
-      padding-top: 16px;
+      padding-top: 1rem;
     }
 
     &__email--pearl {
-      padding-top: 16px;
+      padding-top: 1rem;
     }
 
     &__entertainment {
-      padding-top: 16px;
+      padding-top: 1rem;
     }
 
     &__booking-agent {
-      padding-top: 16px;
+      padding-top: 1rem;
     }
 
     &__email--entertainment{
-      padding-top: 16px;
+      padding-top: 1rem;
     }
 
     &__bandsite {
-      padding-top: 32px;
-      font-size: 32px;
+      padding-top: 2rem;
+      font-size: 2rem;
+    }
+
+    &__copyright {
+      padding-bottom: 1.5rem;
     }
 
 }
@@ -210,10 +230,9 @@ body {
     .bandsite {
      
       &__sub-header li:hover{
-        // padding-bottom: 32px;
         border-bottom: 3px solid #FFFFFF;
         font-weight: 700;
-        padding-bottom: 42px;
+        padding-bottom: 2.625rem;
       }
 
       background-color: #323232;
@@ -221,22 +240,17 @@ body {
 
       &__container {
         display: flex;
-        padding-left: 30px;
+        padding-left: 1.875rem;
       }
 
       &__sub-header {
-        font-size: 24px;
-        line-height: 32px;
+        font-size: 1.5rem;
+        line-height: 2rem;
         font-weight: 400;
       }
 
       &__container {
         padding-bottom: 0;
-      }
-  
-      &__logo {
-        height: 36px;
-        padding: 36px;
       }
 
       &__sub-header {
@@ -246,49 +260,46 @@ body {
          padding: 0;
          margin-bottom: 0;
          justify-content: space-evenly;
-        //  border-bottom: 3px solid #323232;
       }
   
       &__sub-header--nav{
-        // margin-left: 40px;
         text-decoration: none;
         color: #FFFFFF;
-        margin-top: 39px;
+        margin-top: 2.4375rem;
         margin: 0;
         padding: 0;
-        padding: 36px;
-        margin-top: 24px;
+        padding: 2.25rem;
+        margin-top: 1.5rem;
       }
 
       nav {
-        padding-top: 18px;
+        padding-top: 1.125rem;
       }
 
       &__li {
         width: 50%;
         font-weight: 700;
         padding-bottom: 1rem;
-        // gap: 1rem;
       }
   
-
       &__hero--title {
-        padding-left: 28px;
-        font-size: 72px;
+        padding-left: 1.75rem;
+        font-size: 4.5rem;
         font-weight: 500;
       }
     }
 
     .musicians-description {
-      margin: 36px;
-      padding: 24px;
-      font-size: 14px;
-      line-height: 22px;
+      margin: 2.25rem;
+      padding: 1.5rem;
+      font-size: 0.875rem;
+      line-height: 1.375rem;
 
         h2 {
-          font-size: 36px;
-          line-height: 44px;
-          font-weight: 700;
+          font-size: 3rem;
+          font-weight: 500;
+          line-height: 2.75rem;
+          padding-left: 0;
         }
 
         img {
@@ -297,83 +308,68 @@ body {
         }
 
         &__quote {
-          font-size: 24px;
-          line-height: 32px;
-          // display: flex;
-          // justify-content: center;
+          font-size: 1.5rem;
+          line-height: 2rem;
           font-weight: 600;
-          margin-left: 40px;
+          margin-left: 1.125rem;
+          width: 95%;
         }
 
         &__quote-second {
           padding-top: 0;
           font-weight: 600;
-          // margin-left: 140px;
-          margin-left: 50px;
+          margin-left: 1.125rem;
         }
 
         &__bees-knees {
-          margin-left: 38px;
-          padding-left: 0px;
-          font-size: 24px;
+          margin-left: 2.375rem;
+          padding-left: 0;
+          font-size: 1.5rem;
           padding-bottom: 0;
           font-weight: 700;
         }
 
         &__bees-knees-description {
           padding-top: 0;
-          // width: 480px;
-          // width: 150px;
-          // padding-left: 160px;
-          padding-left: 40px;
+          padding-left: 2.5rem;
           display: inline-block;
-          font-size: 16px;
+          font-size: 1rem;
         }
 
         &__container {
-          padding-right: 300px;
+          padding-right: 18.75rem;
           display: flex;
           flex-wrap: row;
-          gap: 36px;
+          gap: 2.25rem;
           width: 80%;
-
         }
 
     }
 
     .photo-gallery {
       background-color: #FAFAFA;
-      padding: 36px;
-      // height: 1450px;
-
+      padding: 2.25rem;
 
       h2 {
-        font-size: 48px;
-        line-height: 44px;
+        font-size: 3rem;
+        line-height: 2.75rem;
         font-weight: 700;
-        padding-left: 30px;
+        padding-left: 1.875rem;
         font-weight: 500;
-        margin-left: 32px;
+        margin-left: 2rem;
       }
 
       &__container {
-        margin-left: 40px;
-        padding-left: 24px;
+        margin-left: 2.5rem;
+        padding-left: 1.5rem;
         display: flex;
         flex-wrap: wrap;
-        // justify-content: space-between;
-        // width: 500px;
         width: 90%;
-        gap: 24px;
-        // height: 500px;
-        // padding-left: 10px;
+        gap: 1.5rem;
       }
 
       &__container img {
-        // width: 530px;
         width: 30%;
-        // height: 320px;
-        // padding: 36px;
       }
 
       &__container-1 {
@@ -394,15 +390,14 @@ body {
       background-color: #323232;
       color: #FFFFFF;
       position: relative;
-      // font-size: 14px;
-      font-size: 14px;
-      line-height: 20px;
+      font-size: 0.875rem;
+      line-height: 1.25rem;
       font-weight: 400;
       margin-top: 5rem;
       margin-top: 0;
 
         &__bandsite {
-          padding: 8px;
+          padding: 0.5rem;
         }
 
         a {
@@ -411,10 +406,10 @@ body {
         }
 
         h2 {
-          font-size: 36px;
-          line-height: 44px;
+          font-size: 2.25rem;
+          line-height: 2.75rem;
           font-weight: 700;
-          margin-left: 0px;
+          margin-left: 0;
           font-weight: 500;
         }
 
@@ -425,96 +420,83 @@ body {
         }
 
         &__social-media {
-          padding-top: 35px;
-          padding-left: 36px;
+          padding-top: 2.1875rem;
+          padding-left: 2.25rem;
         }
 
         &__instagram {
-          width: 40px;
-          height: 30px;
+          width: 2.5rem;
+          height: 1.875rem;
         }
 
         &__facebook {
-          width: 40px;
-          height: 30px;
+          width: 2.5rem;
+          height: 1.875rem;
         }
 
         &__twitter {
-          width: 40px;
-          height: 30px;
+          width: 2.5rem;
+          height: 1.875rem;
         }
 
         &__container--1-bandsite {
           padding-top: 0;
           position: absolute;
           top: 3rem;
-          // left: 1100px;
           right: 1rem;
         }
 
         &__container--2 {
-          padding-left: 52px;
+          padding-left: 3.25rem;
         }
 
         &__container--2-gregg {
           position: absolute;
-          top: 121px;
-          // left: 375px;
-          left: 330px;
+          top: 7.5625rem;
+          left: 20.625rem;
         }
 
         &__container--2-whyte {
           position: absolute;
-          top: 122px;
-          // right: 200px;
-          // right: 90px;
-          right: 130px;
+          top: 7.625rem;
+          right: 8.125rem;
         }
 
         &__container--3 {
-          padding-left: 52px;
+          padding-left: 3.25rem;
         }
 
         &__container--3-agent {
           position: absolute;
-          top: 221px;
-          // left: 375px;
-          // right: 280px;
-          left: 330px;
+          top: 13.8125rem;
+          left: 20.625rem;
         }
 
         &__container--3-agent-int {
           position: absolute;
-          top: 221px;
-          // right: 216px;
-          // right: 105px;
-          // right: 250px;
-          right: 145px;
+          top: 13.8125rem;
+          right: 9.0625rem;
         }
 
         &__container--4 {
-          padding-left: 52px;
+          padding-left: 3.25rem;
         }
 
         &__container--4-gregg {
           position: absolute;
-          top: 322px;
-          // left: 375px;
-          left: 330px;
+          top: 20.125rem;
+          left: 20.625rem;
         }
 
         &__container--4-whyte {
           position: absolute;
-          top: 320px;
-          // right: 130px;
-          // right: 100px;
-          // right: 170px;
-          right: 60px;
+          top: 20rem;
+          right: 3.75rem;
         }
 
         &__copyright {
-          padding-top: 36px;
-          padding-left: 52px;
+          padding-top: 2.25rem;
+          padding-left: 3.25rem;
         }
 
     }
@@ -528,42 +510,25 @@ body {
 
       &__container {
         display: flex;
-        // justify-content: flex-;
-        // padding: 48px;
-        // padding: 36px;
-        // padding: 24px;
-        padding-left: 120px;
+        padding-left: 7.5rem;
       }
 
       h2 {
-        font-size: 36px;
-        line-height: 44px;
+        font-size: 2.25rem;
+        line-height: 2.75rem;
         font-weight: 400;
-        // padding: 36px;
-        // padding: 24px;
-        padding: 20px;
+        padding: 1.25rem;
       }
 
       &__sub-header {
-        font-size: 24px;
-        line-height: 32px;
+        font-size: 1.5rem;
+        line-height: 2rem;
         font-weight: 400;
-        // padding: 48px;
-        // padding: 36px;
-        // padding: 32px;
       }
 
       &__container {
         padding-bottom: 0;
       }
-  
-      &__logo {
-        height: 36px;
-        padding: 36px;
-      }
-
-      
-  
   
       &__sub-header {
          display: flex;
@@ -572,151 +537,116 @@ body {
          padding: 0;
          margin-bottom: 0;
          justify-content: space-evenly;
-        //  border-bottom: 3px solid #323232;
       }
   
       &__sub-header--nav{
-        // margin-left: 40px;
         text-decoration: none;
         color: #FFFFFF;
-        margin-top: 39px;
+        margin-top: 2.4375rem;
         margin: 0;
         padding: 0;
-        padding: 36px;
-        margin-top: 24px;
+        padding: 2.25rem;
+        margin-top: 1.5rem;
       }
 
       nav {
-        padding-top: 18px;
+        padding-top: 1.125rem;
       }
 
       &__li {
         width: 50%;
         font-weight: 700;
         padding-bottom: 1rem;
-        // gap: 1rem;
       }
   
       &__sub-header li:hover{
-        // padding-bottom: 32px;
         border-bottom: 3px solid #FFFFFF;
-        // font-weight: 700;
       }
 
       &__hero--title {
-        padding-left: 50px;
-        font-size: 90px;
+        padding-left: 3.125rem;
+        font-size: 5.625rem;
         font-weight: 500;
       }
 
-
-      &__hero {
-        // background-image: url("../assets/images/Images/hero-bio.jpg");
-        // margin:0;
-        // color: #FFFFFF;
-        // background-size: cover;
-        // // padding-top: 400px;
-        // font-size: 60px;
-        // line-height: 68px;
-        // background-repeat: no-repeat;
-        // background-position: center center;
-        // height: 700px;
-        // display: flex;
-        // padding-top: 550px;
-        // vertical-align: bottom;
-        // padding-left: 250px;
-      }
     }
 
     .musicians-description {
-      margin: 36px;
-      padding: 24px;
-      font-size: 14px;
-      line-height: 22px;
+      margin: 2.25rem;
+      padding: 1.5rem;
+      font-size: 0.875rem;
+      line-height: 1.375rem;
 
         h2 {
-          font-size: 36px;
-          line-height: 44px;
-          font-weight: 700;
-          padding-bottom: 36px;
+          font-size: 3rem;
+          line-height: 2.75rem;
+          font-weight: 500;
+          padding-bottom: 2.25rem;
         }
 
         img {
           display: flex;
-          margin-left: 70px;
-          padding-bottom: 36px;
+          margin-left: 4.375rem;
+          padding-bottom: 2.25rem;
         }
 
         &__quote {
-          font-size: 28px;
-          line-height: 32px;
+          font-size: 1.75rem;
+          line-height: 2rem;
           display: flex;
           justify-content: center;
           font-weight: 500;
-          width: 900px;
-          margin-left: 150px;
+          width: 47%;
+          margin-left: 9.375rem;
         }
 
         &__quote-second {
           padding-top: 0;
           font-weight: 600;
-          margin-left: 155px;
-          font-size: 20px;
+          margin-left: 9.6875rem;
+          font-size: 1.25rem;
           font-weight: 500;
         }
 
         &__bees-knees {
-          margin-left: 170px;
-          font-size: 30px;
+          margin-left: 10.625rem;
+          font-size: 1.875rem;
           padding-bottom: 0;
           font-weight: 600;
         }
 
         &__bees-knees-description {
           padding-top: 0;
-          width: 480px;
-          // padding-left: 240px;
-          padding-left: 170px;
+          width: 30rem;
+          padding-left: 10.625rem;
           display: inline-block;
         }
-
-        
 
     }
 
     .photo-gallery {
       background-color: #FAFAFA;
-      padding: 36px;
-      // height: 1450px;
-      padding-bottom: 0px;
-      // margin-left: 180px;
+      padding: 2.25rem;
+      padding-bottom: 0;
 
         h2 {
-          // font-size: 36px;
-          font-size: 48px;
-          line-height: 44px;
+          font-size: 3rem;
+          line-height: 2.75rem;
           font-weight: 500;
-          padding-left: 52px;
-          margin-left: 100px;
-          padding-bottom: 24px;
+          padding-left: 3.25rem;
+          margin-left: 6.25rem;
+          padding-bottom: 1.5rem;
         }
 
         &__container {
           display: flex;
           flex-wrap: wrap;
-          // justify-content: space-between;
-          // width: 360px;
-          // height: 360px;
-          // padding-left: 16px;
-          gap: 36px;
+          gap: 2.25rem;
           justify-content: flex-end;
         }
 
         &__container img {
-          // width: 530px;
           width: 30%;
-          // height: 320px;
-          // padding: 36px;
         }
   
         &__container-1 {
@@ -734,140 +664,106 @@ body {
     }
 
     .footer {
-      margin-top: 5rem;
+      margin-top: 3rem;
       background-color: #323232;
       color: #FFFFFF;
       position: relative;
-      // font-size: 14px;
-      line-height: 20px;
+      line-height: 1.25rem;
       font-weight: 400;
-      font-size: 16px;
+      font-size: 1rem;
 
         &__bandsite {
-          padding: 8px;
+          padding: 0.5rem;
         }
 
         h2 {
-          // font-size: 36px;
-          line-height: 44px;
-          // font-weight: 700;
-          font-size: 48px;
-          padding-right: 24px;
-          padding-left: 40px;
+          line-height: 2.75rem;
+          font-size: 3rem;
+          padding-right: 1.5rem;
+          padding-left: 2.5rem;
           font-weight: 600;
-          // line-height: 50px;
-          padding-top: 27px;
+          padding-top: 1.6875rem;
         }
 
         &__container--1 {
-          padding-left: 150px;
+          padding-left: 9.375rem;
           display: flex;
           justify-content: flex-start;
         }
 
         &__social-media {
-          padding-top: 73px;
-          padding-left: 36px;
-        }
-
-        &__instagram {
-          width: 40px;
-          height: 30px;
-        }
-
-        &__facebook {
-          width: 40px;
-          height: 30px;
-        }
-
-        &__twitter {
-          width: 40px;
-          height: 30px;
+          padding-top: 4.5625rem;
+          padding-left: 2.25rem;
         }
 
         &__container--1-bandsite {
           padding-top: 0;
           position: absolute;
-          // top: 9px;
-          top: 80px;
-          // left: 1500px;
+          top: 5rem;
           right: 15rem;
         }
 
         &__container--2 {
-          // padding-left: 150px;
-          padding-left: 200px;
+          padding-left: 12.5rem;
           margin-top: 0;
           padding-top: 0;
         }
 
         &__container--2-gregg {
           position: absolute;
-          // top: 120px;
-          top: 165px;
-          left: 570px;
-          margin-bottom: 36px;
+          top: 10.3125rem;
+          left: 35.625rem;
+          margin-bottom: 2.25rem;
         }
 
         &__container--2-whyte {
           position: absolute;
-          // top: 120px;
-          left: 940px;
-          top: 164px;
+          left: 58.75rem;
+          top: 10.25rem;
         }
 
         &__container--3 {
-          // padding-left: 150px;
-          padding-left: 200px;
+          padding-left: 12.5rem;
         }
 
         &__agent {
-          padding-top: 60px;
+          padding-top: 3.75rem;
         }
 
         &__container--3-agent {
           position: absolute;
-          top: 219px;
-          left: 570px;
+          top: 13.6875rem;
+          left: 35.625rem;
         }
 
         &__container--3-agent-int {
           position: absolute;
-          // top: 219px;
-          top: 261px;
-          left: 940px;
+          top: 16.3125rem;
+          left: 58.75rem;
         }
 
         &__container--4 {
-          // padding-left: 150px;
-          padding-left: 200px;
-          padding-bottom: 16px;
+          padding-left: 12.5rem;
+          padding-bottom: 1rem;
         }
 
         &__container--4-gregg {
           position: absolute;
-          // top: 319px;
-          // top: 358px;
-          top: 372px;
-          left: 570px;
+          top: 23.25rem;
+          left: 35.625rem;
         }
 
         &__container--4-whyte {
           position: absolute;
-          // top: 319px;
-          // top: 356px;
-          top: 372px;
-          left: 940px;
+          top: 23.25rem;
+          left: 58.75rem;
         }
 
         &__copyright {
-          // padding-left: 150px;
-          padding-left: 200px;
-          padding-top: 28px;
-          padding-bottom: 24px;
+          padding-left: 12.5rem;
+          padding-top: 1.75rem;
         }
     }
-
 
 }
 
