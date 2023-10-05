@@ -148,6 +148,95 @@ body {
   width: 90%;
 }
 
+.comment {
+  background-color: #FFFFFF;
+}
+.comment h2 {
+  font-size: 32px;
+  padding: 24px;
+  font-weight: 500;
+  color: #323232;
+}
+.comment__top--container {
+  display: flex;
+  justify-content: flex-start;
+  margin-bottom: 12px;
+}
+.comment img {
+  border-radius: 50%;
+  width: 20%;
+  padding-left: 12px;
+}
+.comment__top--name {
+  min-height: 36px;
+  padding: 12px;
+}
+.comment__top--label {
+  color: #AFAFAF;
+  font-weight: 700;
+  font-size: 12px;
+  padding-bottom: 4px;
+}
+.comment__top--name-input {
+  display: block;
+  border-radius: 4px;
+  background-color: #FAFAFA;
+  border-color: #E1E1E1;
+  width: 242px;
+  padding: 12px;
+}
+.comment__top--name-input::-moz-placeholder {
+  color: #323232;
+  font-family: "Avenir";
+  font-size: 14px;
+  padding-left: 4px;
+}
+.comment__top--name-input::placeholder {
+  color: #323232;
+  font-family: "Avenir";
+  font-size: 14px;
+  padding-left: 4px;
+}
+.comment__bottom--label {
+  color: #AFAFAF;
+  font-weight: 700;
+  font-size: 12px;
+  display: block;
+  padding-bottom: 4px;
+}
+.comment__bottom {
+  margin-left: 124px;
+}
+.comment__bottom--textarea {
+  display: block;
+  margin-bottom: 12px;
+  width: 70%;
+  background-color: #FAFAFA;
+  border-radius: 4px;
+}
+.comment__bottom--textarea::-moz-placeholder {
+  color: #323232;
+  font-size: 14px;
+  font-family: "Avenir";
+  padding-left: 4px;
+}
+.comment__bottom--textarea::placeholder {
+  color: #323232;
+  font-size: 14px;
+  font-family: "Avenir";
+  padding-left: 4px;
+}
+.comment__button {
+  background-color: #323232;
+  color: #FFFFFF;
+  border-radius: 4px;
+  width: 72%;
+  height: 40px;
+  font-weight: 700;
+  font-size: 16px;
+  font-weight: 600;
+}
+
 .footer {
   background-color: #323232;
   color: #FFFFFF;
@@ -341,6 +430,28 @@ body {
   }
   .photo-gallery__container-3 {
     display: inline-block;
+  }
+  .comment h2 {
+    font-size: 48px;
+    font-weight: 500;
+    padding-left: 32px;
+  }
+  .comment img {
+    width: 10%;
+  }
+  .comment__top--container {
+    margin-left: 100px;
+  }
+  .comment__bottom {
+    margin-left: 205px;
+    position: relative;
+  }
+  .comment__button {
+    width: 25%;
+    margin-left: 46%;
+    height: 50px;
+    border-radius: 8px;
+    font-size: 16px;
   }
   .footer {
     background-color: #323232;
@@ -569,6 +680,29 @@ body {
   .photo-gallery__container-3 {
     display: inline-block;
     padding-bottom: 0;
+  }
+  .comment h2 {
+    padding: 48px;
+    margin-left: 60px;
+  }
+  .comment__top--name-input {
+    width: 30rem;
+  }
+  .comment img {
+    width: 7%;
+  }
+  .comment__top--container {
+    margin-left: 29.3%;
+  }
+  .comment__bottom {
+    margin-left: 35.5%;
+    width: 36.5%;
+  }
+  .comment__bottom--textarea {
+    padding: 12px;
+  }
+  .comment__button {
+    margin-left: 49%;
   }
   .footer {
     margin-top: 3rem;
