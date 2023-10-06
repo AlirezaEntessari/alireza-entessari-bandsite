@@ -166,7 +166,8 @@ body {
     img {
       border-radius: 50%;
       width: 20%;
-      padding-left: 12px;
+      margin-left: 11px;
+      aspect-ratio: 1;
     }
 
     &__top--name {
