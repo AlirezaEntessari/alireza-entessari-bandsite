@@ -6,65 +6,35 @@
             { name: "Miles Acosta", timestamp: "12/20/2020", text: "I can't stop listening. Every time I hear one of their songs - the vocals - it gives me goosebumps. Shivers straight down my spine. What a beautiful expression of creativity. Can't get enough." }
         ];
 
-
-        // const commentsList = document.querySelector('.comments__list');
-        // const commentForm = document.querySelector('.comment__top--container');
-
-        // function showComment(comment){
-        //     const item = document.createElement('li');
-        //     item.innerText = `${commentsArray.name} ${commentsArray.timestamp} ${commentsArray.text}`;
-        //     commentsList.appendChild(item);
-        // }
-
-        // function clear(){
-        //     commentsList.innerText = "";
-        // }
-
-        // function addText(event){
-        //     event.preventDefault();
-
-        //     const nameDiv = document.querySelector(".comment__1");
-        //     const commentDiv = document.querySelector('.comment__2');
-
-        //     const name = nameDiv.value;
-        //     const commentText = commentDiv.value;
-        //     const timestamp = new Date().toISOString();
-
-        //     const newComment = { name, timestamp, text: commentText };
-        //     commentsArray.push(newComment);
-
-        //     // Clear input fields
-        //     nameDiv.value = "";
-        //     commentDiv.value = "";
-
-        // }
-
-        // commentForm.addEventListener("submit", addText);
-
-        // comments.forEach(displayComment);
-
-        // Function to display a comment on the page
         function displayComment(comment) {
-            const commentsContainer = document.getElementById("comments");
 
-            const commentDiv = document.createElement("div");
-            commentDiv.classList.add("comment");
+            const commentsContainer = document.querySelector(".comments__list");
 
-            const nameElement = document.createElement("strong");
-            nameElement.textContent = comment.name;
+            commentsArray.forEach((i) => {
+                const pDiv = document.createElement('div');
+                pDiv.classList.add("comment__div");
+                const pTag = document.createElement('p');
+                pTag.textContent = i.name;
+                // commentsContainer.appendChild(pTag);
+                const pTag2 = document.createElement('p');
+                pTag2.textContent = i.timestamp;
+                const pTag3 = document.createElement('p');
+                pTag3.textContent = i.text;
+                const img = document.createElement('img');
+                img.classList.add("comment__img");
+                pDiv.appendChild(img);
+                pDiv.appendChild(pTag);
+                pDiv.appendChild(pTag2);
+                pDiv.appendChild(pTag3);
+                commentsContainer.appendChild(pDiv);
 
-            const timestampElement = document.createElement("span");
-            timestampElement.textContent = comment.timestamp.toLocaleString();
 
-            const textElement = document.createElement("p");
-            textElement.textContent = comment.text;
+                // commentsContainer.appendChild(pTag2);
 
-            commentDiv.appendChild(nameElement);
-            commentDiv.appendChild(timestampElement);
-            commentDiv.appendChild(textElement);
-
-            commentsContainer.appendChild(commentDiv);
+            })
         }
+
+        displayComment();
 
         // Function to clear all comments from the page
         function clearComments() {

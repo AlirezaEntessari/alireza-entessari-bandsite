@@ -74,7 +74,7 @@ body {
       padding-bottom: 14.0625rem;
       font-size: 3rem;
       background-color: #323232;
-      opacity: 90%;
+      opacity: 100%;
     }
 
     &__hero--title {
@@ -149,6 +149,17 @@ body {
 
 .comment {
   background-color: #FFFFFF;
+
+    &__div {
+      display: flex;
+      justify-content: center;
+      width: 50%;
+    }
+
+    &__img{
+      background-color: #E1E1E1;
+      aspect-ratio: 1;
+    }
 
     h2 {
       font-size: 32px;

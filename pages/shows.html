@@ -8,28 +8,35 @@
 </head>
 <body>
 
-    <header class="bandsite">
-        <div class="bandsite__container">
-            <a href="./index.html"><img class="bandsite__logo" src="../assets/logos/Logo/Logo-bandsite.svg" alt="band site"></a>
-            <nav>
-                <ul class="bandsite__sub-header">
-                    <li class="bandsite__li"><a class="bandsite__sub-header--nav" href="">Biography</a></li>
-                    <li class="bandsite__li"><a class="bandsite__sub-header--nav" href="">Shows</a></li>
-                </ul>
-            </nav>
-        </div>
-        <div class="bandsite__hero">
-            <p class="bandsite__hero--header">Beautiful Beasts Album</p>
-            <p class="bandsite__hero--subheader">Queen of Yellow x<span class="bandsite__hero--strings">For The Strings</span></p>
-        </div>
-    </header>
+    <main>
+        <header class="bandsite">
+            <div class="bandsite__container">
+                <a href="./index.html"><img class="bandsite__logo" src="../assets/logos/Logo/Logo-bandsite.svg" alt="band site"></a>
+                <nav>
+                    <ul class="bandsite__sub-header">
+                        <li class="bandsite__li"><a class="bandsite__sub-header--nav" href="">Biography</a></li>
+                        <li class="bandsite__li"><a class="bandsite__sub-header--nav" href="">Shows</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="bandsite__hero">
+                <p class="bandsite__hero--header">Beautiful Beasts Album</p>
+                <p class="bandsite__hero--subheader">Queen of Yellow x<span class="bandsite__hero--strings">For The Strings</span></p>
+                <div class="bandsite__soundcloud">
+                    <iframe width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay" 
+                    src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/253766656&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
+                    <div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;">
+                        <a href="https://soundcloud.com/alyandfila" title="Aly &amp; Fila" target="_blank" style="color: #cccccc; text-decoration: none;">Aly &amp; Fila</a> · <a href="https://soundcloud.com/alyandfila/aly-fila-live-ultra-music-festival-2016" 
+                        title="Aly &amp; Fila Live @ Ultra Music Festival 2016 (Miami)" target="_blank" style="color: #cccccc; text-decoration: none;">Aly &amp; Fila Live @ Ultra Music Festival 2016 (Miami)</a></div>
+                </div>
+            </div>
+        </header>
 
-    <div>
-        <iframe width="60%" height="100" scrolling="no" frameborder="no" allow="autoplay" 
-        src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1610327157&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/rodwave" 
-            title="Rod Wave" target="_blank" style="color: #cccccc; text-decoration: none;">Rod Wave</a> · <a href="https://soundcloud.com/rodwave/track-11" title="Boyz Don&#x27;t Cry" 
-            target="_blank" style="color: #cccccc; text-decoration: none;">Boyz Don&#x27;t Cry</a></div>
-    </div>
+        <section class="shows">
+            <h2>Shows</h2>
+            <ul class="shows__list"></ul>
+        </section>
+    </main>
 
     <footer class="footer">
         <div class="footer__container--1">
@@ -93,7 +100,7 @@
         </div>
         <div class="footer__container--1-bandsite">
             <div class="footer__bandsite">
-                <a href=""><img src="../assets/logos/Logo/Logo-bandsite.svg" alt="bandsite-logo"></a>
+                <a href=""><img src="../assets/logos/Logo/Logo-bandsite.svg" alt="bandsite logo"></a>
             </div>
         </div>
         <div class="footer__copyright">
@@ -101,5 +108,6 @@
         </div>
     </footer>
     
+    <script src="../scripts/build-shows-page.js"></script>
 </body>
 </html>

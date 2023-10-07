@@ -91,7 +91,7 @@ body {
   padding-bottom: 14.0625rem;
   font-size: 3rem;
   background-color: #323232;
-  opacity: 90%;
+  opacity: 100%;
 }
 .bandsite__hero--title {
   font-size: 2.375rem;
@@ -150,6 +150,15 @@ body {
 
 .comment {
   background-color: #FFFFFF;
+}
+.comment__div {
+  display: flex;
+  justify-content: center;
+  width: 50%;
+}
+.comment__img {
+  background-color: #E1E1E1;
+  aspect-ratio: 1;
 }
 .comment h2 {
   font-size: 32px;
