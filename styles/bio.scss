@@ -154,12 +154,35 @@ body {
       display: flex;
       justify-content: center;
       width: 50%;
+      margin-left: 6rem;
+    }
+
+    &__pTag {
+      color: #323232;
+      font-weight: 500;
+    }
+
+    &__pTag2 {
+      margin-left: 60px;
+      color: #AFAFAF;
+    }
+
+    &__pTag3 {
+      color: #323232;
+    }
+
+    &__div2{
+      border-bottom: 1px solid #E1E1E1;
     }
 
     &__img{
       background-color: #E1E1E1;
       aspect-ratio: 1;
+      padding: 28px;
+      // width: 2rem;
+      
     }
+
 
     h2 {
       font-size: 32px;
@@ -202,6 +225,10 @@ body {
       padding: 12px;
     }
 
+    &__top--name-input:active {
+      border: 1px solid #323232;
+    }
+
     &__top--name-input::placeholder {
       color: #323232;
       font-family: 'Avenir';
@@ -235,6 +262,11 @@ body {
       font-family: 'Avenir';
       padding-left: 4px;
     }
+
+    &__bottom--textarea:active{
+      border: 1px solid #323232;
+    }
+
 
     &__button {
       background-color: #323232;
@@ -515,6 +547,25 @@ body {
         height: 50px;
         border-radius: 8px;
         font-size: 16px;
+      }
+
+      &__img {
+        padding: 12px;
+      }
+
+      &__div {
+        margin-left: 0;
+        padding: 24px 18px;
+      }
+
+
+      &__div2{
+        padding: 24px 18px;
+      
+      }
+
+      &__pTag2{
+      
       }
      
     }

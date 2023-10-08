@@ -8,25 +8,31 @@
 
         function displayComment(comment) {
 
-            const commentsContainer = document.querySelector(".comments__list");
+            const commentsContainer = document.querySelector(".comment__list");
 
             commentsArray.forEach((i) => {
                 const pDiv = document.createElement('div');
                 pDiv.classList.add("comment__div");
+                const pDiv2 = document.createElement('div');
+                pDiv2.classList.add("comment__div2");
                 const pTag = document.createElement('p');
                 pTag.textContent = i.name;
+                pTag.classList.add("comment__pTag");
                 // commentsContainer.appendChild(pTag);
                 const pTag2 = document.createElement('p');
                 pTag2.textContent = i.timestamp;
+                pTag2.classList.add("comment__pTag2");
                 const pTag3 = document.createElement('p');
                 pTag3.textContent = i.text;
+                pTag3.classList.add("comment__pTag3");
                 const img = document.createElement('img');
                 img.classList.add("comment__img");
                 pDiv.appendChild(img);
                 pDiv.appendChild(pTag);
                 pDiv.appendChild(pTag2);
-                pDiv.appendChild(pTag3);
+                pDiv2.appendChild(pTag3);
                 commentsContainer.appendChild(pDiv);
+                commentsContainer.appendChild(pDiv2);
 
 
                 // commentsContainer.appendChild(pTag2);
@@ -38,9 +44,11 @@
 
         // Function to clear all comments from the page
         function clearComments() {
-            const commentsContainer = document.getElementById("comments");
+            const commentsContainer = document.querySelector("comment__list");
             commentsContainer.innerHTML = "";
         }
+
+        clearComments();
 
         // Function to re-render all comments from the comment array
         function renderComments() {
@@ -49,6 +57,7 @@
                 displayComment(comment);
             });
         }
+
 
         // Add event listener to the comment form
         const commentForm = document.getElementById("comment-form");

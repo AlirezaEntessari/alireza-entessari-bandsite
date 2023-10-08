@@ -16,6 +16,8 @@ function displayComment(comment){
     showsArray.forEach((i) => {
         const pDiv = document.createElement('div');
         pDiv.classList.add("shows__div");
+        const pDiv2 = document.createElement('div');
+        pDiv2.classList.add("shows__div2");
         const pTag = document.createElement('p');
         pTag.textContent = i.header;
         const pTag2 = document.createElement('p');
@@ -24,11 +26,17 @@ function displayComment(comment){
         pTag3.textContent = i.venue;
         const pTag4 = document.createElement('p');
         pTag4.textContent = i.location;
+        const button = document.createElement('button');
+        button.classList.add("shows__button");
+        button.textContent = "BUY TICKETS";
         pDiv.appendChild(pTag);
-        pDiv.appendChild(pTag2);
-        pDiv.appendChild(pTag3);
-        pDiv.appendChild(pTag4);
+        pDiv2.appendChild(pTag2);
+        pDiv2.appendChild(pTag3);
+        pDiv2.appendChild(pTag4);
+        pDiv2.appendChild(button);
+        
         showsContainer.appendChild(pDiv);
+        showsContainer.appendChild(pDiv2);
     })
 
 }

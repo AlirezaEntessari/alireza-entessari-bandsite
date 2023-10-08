@@ -143,8 +143,48 @@ body {
 }
 
   .shows {
+
+    display: flex;
+
+    h2{
+      font-size: 48px;
+      padding: 32px;
+      color: #323232;
+    }
+
     &__list{
       
+    }
+
+
+    &__div{
+      display: block;
+      margin-top: 100px;
+      padding: 32px;
+      justify-content: center;
+    }
+
+    &__div2{
+      display: flex;
+      border-bottom: 1px solid #E1E1E1;
+    }
+
+
+
+    &__div2:hover {
+      background-color: #FAFAFA;
+    }
+
+    &__div2:active{
+      background-color: #E1E1E1;
+    }
+
+    &__button {
+      background-color: #323232;
+      color: #FFFFFF;
+      width: 8rem;
+      height: 3rem;
+      border-radius: 8px;
     }
   }
 
