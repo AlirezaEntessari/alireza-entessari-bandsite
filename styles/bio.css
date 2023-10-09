@@ -176,6 +176,9 @@ body {
   aspect-ratio: 1;
   padding: 28px;
 }
+.comment__top {
+  border-bottom: 1px solid #E1E1E1;
+}
 .comment h2 {
   font-size: 32px;
   padding: 24px;

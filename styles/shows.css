@@ -45,6 +45,7 @@ body {
   font-weight: 700;
   text-align: center;
   padding-bottom: 0;
+  width: 100%;
 }
 .bandsite__container {
   padding-bottom: 0;
@@ -95,21 +96,29 @@ body {
   position: relative;
 }
 .bandsite__hero--header {
+  font-size: 28px;
   position: absolute;
   top: 200px;
   left: 50px;
+  font-weight: 400;
 }
 .bandsite__hero--subheader {
   position: absolute;
-  top: 400px;
+  top: 250px;
   left: 50px;
   font-weight: 500;
-  font-size: 72px;
+  font-size: 36px;
 }
 .bandsite__hero--strings {
   position: absolute;
-  top: 100px;
-  left: 10px;
+  top: 40px;
+  left: 0px;
+}
+.bandsite__soundcloud {
+  position: absolute;
+  top: 400px;
+  left: 50px;
+  width: 85%;
 }
 .bandsite__container {
   padding-bottom: 0;
@@ -145,36 +154,42 @@ body {
   font-weight: 700;
 }
 
-.shows {
-  display: flex;
-}
 .shows h2 {
-  font-size: 48px;
-  padding: 32px;
-  color: #323232;
+  font-size: 32px;
+  padding: 16px;
+  margin-bottom: 0;
+}
+.shows__list {
+  padding-left: 0;
+  justify-content: flex-start;
 }
 .shows__div {
-  display: block;
-  margin-top: 100px;
-  padding: 32px;
-  justify-content: center;
-}
-.shows__div2 {
-  display: flex;
   border-bottom: 1px solid #E1E1E1;
+  padding: 16px;
 }
-.shows__div2:hover {
+.shows__pTag, .shows__pTag3, .shows__pTag5 {
+  color: #AFAFAF;
+  font-size: 12px;
+}
+.shows__pTag2 {
+  font-weight: 500;
+}
+.shows__div:hover {
   background-color: #FAFAFA;
 }
-.shows__div2:active {
+.shows__div:active {
   background-color: #E1E1E1;
 }
 .shows__button {
   background-color: #323232;
   color: #FFFFFF;
-  width: 8rem;
   height: 3rem;
-  border-radius: 8px;
+  border-radius: 4px;
+  width: 100%;
+  padding: 16px;
+}
+.shows__header {
+  display: none;
 }
 
 .footer {
@@ -291,6 +306,68 @@ body {
     font-size: 4.5rem;
     font-weight: 500;
   }
+  .bandsite__hero--header {
+    font-size: 32px;
+    font-weight: 700;
+  }
+  .bandsite__hero--subheader {
+    font-size: 72px;
+    font-weight: 700;
+  }
+  .bandsite__hero--strings {
+    position: absolute;
+    top: 70px;
+  }
+  .bandsite__soundcloud {
+    padding-top: 72px;
+    width: 70%;
+    height: 1rem;
+  }
+  .shows {
+    padding-bottom: 24px;
+  }
+  .shows h2 {
+    padding: 48px;
+    font-size: 48px;
+    font-weight: 500;
+  }
+  .shows__pTag, .shows__pTag3, .shows__pTag5 {
+    display: none;
+  }
+  .shows__pTag2, .shows__pTag4, .shows__pTag6 {
+    padding: 12px;
+  }
+  .shows__div {
+    display: flex;
+  }
+  .shows__button {
+    width: 20%;
+    margin-left: 32px;
+    text-align: center;
+    position: absolute;
+    right: 60px;
+  }
+  .shows__pTag2, .shows__pTag4, .shows__pTag6 {
+    padding-left: 48px;
+  }
+  .shows__header {
+    display: flex;
+    color: #AFAFAF;
+    justify-content: space-between;
+    margin-bottom: 0;
+  }
+  .shows__hTag {
+    padding-left: 32px;
+    font-weight: 500;
+  }
+  .shows__hTag2 {
+    padding-left: 150px;
+    font-weight: 500;
+  }
+  .shows__hTag3 {
+    padding-left: 90px;
+    font-weight: 500;
+  }
   .footer {
     background-color: #323232;
     color: #FFFFFF;
@@ -390,6 +467,7 @@ body {
   .bandsite {
     background-color: #323232;
     color: #FFFFFF;
+    position: relative;
   }
   .bandsite__container {
     display: flex;
@@ -441,6 +519,51 @@ body {
     padding-left: 3.125rem;
     font-size: 5.625rem;
     font-weight: 500;
+  }
+  .bandsite__hero--header {
+    padding: 5rem;
+  }
+  .bandsite__hero--subheader {
+    padding: 3.5rem;
+    width: 33%;
+    display: flex;
+    flex-direction: row;
+  }
+  .bandsite__hero--strings {
+    padding: 4rem;
+  }
+  .bandsite__soundcloud {
+    position: absolute;
+    top: 170px;
+    left: 900px;
+    width: 30%;
+  }
+  .shows {
+    margin-right: 200px;
+  }
+  .shows h2 {
+    padding-left: 200px;
+  }
+  .shows__list {
+    padding-left: 450px;
+    padding-right: 150px;
+  }
+  .shows__header {
+    padding-left: 255px;
+  }
+  .shows__hTag2 {
+    padding-left: 180px;
+  }
+  .shows__hTag3 {
+    padding-left: 130px;
+  }
+  .shows__pTag2, .shows__pTag4, .shows__pTag6 {
+    padding-left: 80px;
+  }
+  .shows__button {
+    position: absolute;
+    right: 500px;
+    width: 10%;
   }
   .footer {
     margin-top: 3rem;
