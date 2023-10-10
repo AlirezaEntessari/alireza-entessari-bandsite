@@ -153,20 +153,23 @@ body {
 }
 .comment__div {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   width: 50%;
-  margin-left: 6rem;
+  margin-left: 0;
 }
 .comment__pTag {
   color: #323232;
   font-weight: 500;
+  padding-left: 16px;
 }
 .comment__pTag2 {
-  margin-left: 60px;
+  margin-left: 180px;
   color: #AFAFAF;
 }
 .comment__pTag3 {
   color: #323232;
+  width: 80%;
+  padding-left: 90px;
 }
 .comment__div2 {
   border-bottom: 1px solid #E1E1E1;
@@ -174,7 +177,7 @@ body {
 .comment__img {
   background-color: #E1E1E1;
   aspect-ratio: 1;
-  padding: 28px;
+  padding: 32px;
 }
 .comment__top {
   border-bottom: 1px solid #E1E1E1;
@@ -192,8 +195,8 @@ body {
 }
 .comment img {
   border-radius: 50%;
-  width: 20%;
-  margin-left: 11px;
+  width: 15%;
+  margin-left: 38px;
   aspect-ratio: 1;
 }
 .comment__top--name {
@@ -202,7 +205,7 @@ body {
 }
 .comment__top--label {
   color: #AFAFAF;
-  font-weight: 700;
+  font-weight: 500;
   font-size: 12px;
   padding-bottom: 4px;
 }
@@ -211,7 +214,7 @@ body {
   border-radius: 4px;
   background-color: #FAFAFA;
   border-color: #E1E1E1;
-  width: 242px;
+  width: 19.5rem;
   padding: 12px;
 }
 .comment__top--name-input:active {
@@ -231,10 +234,11 @@ body {
 }
 .comment__bottom--label {
   color: #AFAFAF;
-  font-weight: 700;
+  font-weight: 500;
   font-size: 12px;
   display: block;
   padding-bottom: 4px;
+  margin-left: 0px;
 }
 .comment__bottom {
   margin-left: 124px;
@@ -242,21 +246,22 @@ body {
 .comment__bottom--textarea {
   display: block;
   margin-bottom: 12px;
-  width: 70%;
+  width: 21rem;
   background-color: #FAFAFA;
   border-radius: 4px;
+  margin-left: 0px;
 }
 .comment__bottom--textarea::-moz-placeholder {
   color: #323232;
   font-size: 14px;
   font-family: "Avenir";
-  padding-left: 4px;
+  padding: 12px;
 }
 .comment__bottom--textarea::placeholder {
   color: #323232;
   font-size: 14px;
   font-family: "Avenir";
-  padding-left: 4px;
+  padding: 12px;
 }
 .comment__bottom--textarea:active {
   border: 1px solid #323232;
@@ -265,11 +270,16 @@ body {
   background-color: #323232;
   color: #FFFFFF;
   border-radius: 4px;
-  width: 72%;
+  width: 21rem;
   height: 40px;
   font-weight: 700;
   font-size: 16px;
   font-weight: 600;
+  margin-bottom: 32px;
+  margin-left: 0;
+}
+.comment__list {
+  padding: 16px;
 }
 
 .footer {
@@ -474,29 +484,55 @@ body {
   .comment img {
     width: 10%;
   }
+  .comment__top--name-input {
+    width: 39rem;
+  }
+  .comment__bottom--textarea {
+    width: 40rem;
+  }
   .comment__top--container {
     margin-left: 100px;
   }
   .comment__bottom {
-    margin-left: 205px;
-    position: relative;
+    margin-left: 235px;
   }
   .comment__button {
     width: 25%;
-    margin-left: 46%;
+    margin-left: 28rem;
     height: 50px;
     border-radius: 8px;
     font-size: 16px;
   }
   .comment__img {
-    padding: 12px;
+    padding: 36px;
   }
   .comment__div {
     margin-left: 0;
     padding: 24px 18px;
+    padding-bottom: 0;
   }
   .comment__div2 {
     padding: 24px 18px;
+    padding-top: 0;
+  }
+  .comment__top--name-input::-moz-placeholder {
+    padding: 12px;
+  }
+  .comment__top--name-input::placeholder {
+    padding: 12px;
+  }
+  .comment__bottom--textarea::-moz-placeholder {
+    padding: 12px;
+  }
+  .comment__bottom--textarea::placeholder {
+    padding: 12px;
+  }
+  .comment__list {
+    padding: 36px;
+    margin-left: 36px;
+  }
+  .comment__pTag2 {
+    margin-left: 500px;
   }
   .footer {
     background-color: #323232;
@@ -731,10 +767,11 @@ body {
     margin-left: 60px;
   }
   .comment__top--name-input {
-    width: 30rem;
+    width: 40rem;
   }
   .comment img {
     width: 7%;
+    margin-left: 38px;
   }
   .comment__top--container {
     margin-left: 29.3%;
@@ -743,11 +780,31 @@ body {
     margin-left: 35.5%;
     width: 36.5%;
   }
+  .comment__bottom--label {
+    margin-left: 32px;
+  }
   .comment__bottom--textarea {
     padding: 12px;
+    margin-left: 32px;
   }
   .comment__button {
-    margin-left: 49%;
+    margin-left: 31.5rem;
+    width: 12rem;
+  }
+  .comment__img {
+    padding: 32px;
+  }
+  .comment__list {
+    padding: 0 30rem;
+  }
+  .comment__pTag3 {
+    margin-left: 28px;
+  }
+  .comment__pTag2 {
+    margin-left: 400px;
+  }
+  .comment__div2 {
+    width: 70%;
   }
   .footer {
     margin-top: 3rem;

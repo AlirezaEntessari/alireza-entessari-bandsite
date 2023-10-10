@@ -152,23 +152,26 @@ body {
 
     &__div {
       display: flex;
-      justify-content: center;
+      justify-content: space-between;
       width: 50%;
-      margin-left: 6rem;
+      margin-left: 0;
     }
 
     &__pTag {
       color: #323232;
       font-weight: 500;
+      padding-left: 16px;
     }
 
     &__pTag2 {
-      margin-left: 60px;
+      margin-left: 180px;
       color: #AFAFAF;
     }
 
     &__pTag3 {
       color: #323232;
+      width: 80%;
+      padding-left: 90px;
     }
 
     &__div2{
@@ -178,9 +181,9 @@ body {
     &__img{
       background-color: #E1E1E1;
       aspect-ratio: 1;
-      padding: 28px;
-      // width: 2rem;
-      
+      padding: 32px;
+
+    
     }
 
     &__top {
@@ -203,8 +206,8 @@ body {
 
     img {
       border-radius: 50%;
-      width: 20%;
-      margin-left: 11px;
+      width: 15%;
+      margin-left: 38px;
       aspect-ratio: 1;
     }
 
@@ -215,7 +218,7 @@ body {
 
     &__top--label {
       color: #AFAFAF;
-      font-weight: 700;
+      font-weight: 500;
       font-size: 12px;
       padding-bottom: 4px;
     }
@@ -225,7 +228,7 @@ body {
       border-radius: 4px;
       background-color: #FAFAFA;
       border-color: #E1E1E1;
-      width: 242px;
+      width: 19.5rem;
       padding: 12px;
     }
 
@@ -242,10 +245,11 @@ body {
 
     &__bottom--label {
       color: #AFAFAF;
-      font-weight: 700;
+      font-weight: 500;
       font-size: 12px;
       display: block;
       padding-bottom: 4px;
+      margin-left: 0px;
     }
 
     &__bottom {
@@ -255,16 +259,17 @@ body {
     &__bottom--textarea {
       display: block;
       margin-bottom: 12px;
-      width: 70%;
+      width: 21rem;
       background-color: #FAFAFA;
       border-radius: 4px;
+      margin-left: 0px;
     }
 
     &__bottom--textarea::placeholder {
       color: #323232;
       font-size: 14px;
       font-family: 'Avenir';
-      padding-left: 4px;
+      padding: 12px;
     }
 
     &__bottom--textarea:active{
@@ -276,11 +281,17 @@ body {
       background-color: #323232;
       color: #FFFFFF;
       border-radius: 4px;
-      width: 72%;
+      width: 21rem;
       height: 40px;
       font-weight: 700;
       font-size: 16px;
       font-weight: 600;
+      margin-bottom: 32px;
+      margin-left: 0;
+    }
+
+    &__list {
+      padding: 16px;
     }
 
 
@@ -536,40 +547,62 @@ body {
         width: 10%;
       }
 
+      &__top--name-input {
+        width: 39rem;
+      }
+
+      &__bottom--textarea {
+        width: 40rem;
+      }
+
       &__top--container {
         margin-left: 100px;
       }
 
       &__bottom {
-        margin-left: 205px;
-        position: relative;
+        margin-left: 235px;
       }
 
       &__button {
         width: 25%;
-        margin-left: 46%;
+        margin-left: 28rem;
         height: 50px;
         border-radius: 8px;
         font-size: 16px;
       }
 
       &__img {
-        padding: 12px;
+        padding: 36px;
       }
 
       &__div {
         margin-left: 0;
         padding: 24px 18px;
+        padding-bottom: 0;
       }
 
 
       &__div2{
         padding: 24px 18px;
+        padding-top: 0;
       
       }
 
+      &__top--name-input::placeholder{
+        padding: 12px;
+      }
+
+      &__bottom--textarea::placeholder{
+        padding: 12px;
+      }
+
+      &__list {
+        padding: 36px;
+        margin-left: 36px;
+      }
+
       &__pTag2{
-      
+        margin-left: 500px;
       }
      
     }
@@ -859,11 +892,12 @@ body {
       }
 
       &__top--name-input{
-        width: 30rem;
+        width: 40rem;
       }
 
       img {
         width: 7%;
+        margin-left: 38px;
       }
 
       &__top--container {
@@ -875,12 +909,39 @@ body {
         width: 36.5%
       }
 
+      &__bottom--label {
+        margin-left: 32px;
+      }
+
+
       &__bottom--textarea{
         padding: 12px;
+        margin-left: 32px;
       }
 
       &__button{
-        margin-left: 49%;
+        margin-left: 31.5rem;
+        width: 12rem;
+      }
+
+      &__img {
+        padding: 32px;
+      }
+
+      &__list {
+        padding: 0 30rem;
+      }
+
+      &__pTag3 {
+        margin-left: 28px;
+      }
+
+     &__pTag2 {
+      margin-left: 400px;
+     }
+
+      &__div2 {
+        width: 70%;
       }
 
 

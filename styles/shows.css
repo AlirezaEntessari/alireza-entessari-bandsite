@@ -346,15 +346,24 @@ body {
     text-align: center;
     position: absolute;
     right: 60px;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 12px;
   }
   .shows__pTag2, .shows__pTag4, .shows__pTag6 {
     padding-left: 48px;
+  }
+  .shows__list {
+    padding: 18px;
+    margin-top: 0;
+    padding-top: 0;
   }
   .shows__header {
     display: flex;
     color: #AFAFAF;
     justify-content: space-between;
     margin-bottom: 0;
+    margin-left: 0.3rem;
   }
   .shows__hTag {
     padding-left: 32px;
@@ -525,9 +534,10 @@ body {
   }
   .bandsite__hero--subheader {
     padding: 3.5rem;
-    width: 33%;
+    width: 40%;
     display: flex;
     flex-direction: row;
+    margin-left: 1rem;
   }
   .bandsite__hero--strings {
     padding: 4rem;

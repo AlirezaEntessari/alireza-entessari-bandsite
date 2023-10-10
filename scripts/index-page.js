@@ -34,9 +34,6 @@
                 commentsContainer.appendChild(pDiv);
                 commentsContainer.appendChild(pDiv2);
 
-
-                // commentsContainer.appendChild(pTag2);
-
             })
         }
 
@@ -44,7 +41,7 @@
 
         // Function to clear all comments from the page
         function clearComments() {
-            const commentsContainer = document.querySelector("comment__list");
+            const commentsContainer = document.querySelector(".comment__list");
             commentsContainer.innerHTML = "";
         }
 
@@ -60,12 +57,12 @@
 
 
         // Add event listener to the comment form
-        const commentForm = document.getElementById("comment-form");
+        const commentForm = document.querySelector(".comment__list");
         commentForm.addEventListener("submit", function (e) {
             e.preventDefault();
 
-            const nameInput = document.getElementById("name");
-            const commentInput = document.getElementById("comment");
+            const nameInput = document.querySelector(".comment__top--name-input");
+            const commentInput = document.querySelector(".comment__bottom--textarea");
 
             const newName = nameInput.value;
             const newCommentText = commentInput.value;
@@ -87,4 +84,11 @@
         });
 
         // Initial rendering of comments
-        renderComments();
+
+        // Uncomment the respective functions in order to render the comments or to clear the comments
+
+        // renderComments();
+
+        // clearComments();
+
+        displayComment();
