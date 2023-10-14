@@ -92,3 +92,21 @@
         // clearComments();
 
         displayComment();
+
+        async function updateCommentDisplay(){
+            try {
+                const response = await database.getComments();
+                console.log(response.data);
+                // sort response by index, with index[0] being first
+                response.data.sort((a, b) => {
+                    b.timestamp - a.timestamp;
+                })
+                console.log(response.data);
+                commentSection.innerHTML = "";
+                response.data.forEach((element) => {
+                    displayComment(element);
+                });
+            }catch(error){
+                console.log(error);
+            }
+        }
