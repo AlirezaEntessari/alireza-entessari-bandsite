@@ -1,7 +1,37 @@
 export class BandSiteAPI {
     constructor(apiKey){
         this.apiKey = apiKey;
-        this.baseURL = "https://project-1-api.herokuapp.com/";
+        this.baseURL = "https://project-1-api.herokuapp.com";
+    }
+
+    async postComment(comment){
+        try {
+            const response = await axios.post(`${this.baseURL}/comments?api_key=${this.apiKey}`, comment);
+            // console.log(response.data);
+            console.log(this.getComments());
+            return this.getComments().response.data;
+        } catch (error){
+            console.log(error);
+        }
+    }
+    
+    async getComments() {
+        try {
+            const response = await axios.get(`${this.baseURL}/comments?api_key=${this.apiKey}`);
+            return response.data;
+        } catch (error){
+            console.log(error);
+        }
+    }
+    
+    async getShows() {
+        try {
+            const response = await axios.get(`${this.baseURL}/showdates?api_key=${this.apiKey}`);
+            const showData = [];
+        } catch(error) {
+            console.log("Error while retrieving shows", error);
+            return error;
+        }
     }
 }
 
@@ -17,29 +47,6 @@ export class BandSiteAPI {
 //     })
 // }
 
-async function postComment(comment){
-    try {
-        const response = await axios.post(`${this.baseURL}/comments${this.apiKey}`, comment);
-    } catch (error){
-        console.log(error);
-    }
-}
 
-async function getComments() {
-    try {
-        const response = await axios.get(`${this.baseURL}/comments${this.apiKey}`);
-        console.log(response.data);
-    } catch (error){
-        console.log(error);
-    }
-}
 
-async function getShows() {
-    try {
-        const response = await axios.get(`${this.baseURL}/comments${this.apiKey}`);
-        const showData = [];
-    } catch(error) {
-        console.log("Error while retrieving shows", error);
-        return error;
-    }
-}
+// export { BandSiteAPI };

@@ -61,20 +61,21 @@
         <section class="comment">
             <div class="comment__top">
                 <h2>Join the Conversation</h2>
-                <form class="comment__top--container">
+                <!-- <form class="comment__top--container"> -->
+                <form class="comment__form">
                     <img src="./assets/images/Images/Mohan-muruge.jpg" alt="Mohan muruge image">
 
                     <div class="comment__top--name">
                         <label class="comment__top--label" for="enter-name">NAME</label>
                         <input class="comment__top--name-input" type="text" name="enter-name" id="enter-name" placeholder="Enter your name">
                     </div>
-                </form>
+                <!-- </form> -->
                 
-                <form class="comment__bottom">
+                <!-- <form class="comment__bottom"> -->
                     <label class="comment__bottom--label" for="add-comment">COMMENT</label>
                     <textarea class="comment__bottom--textarea" name="add-comment" placeholder="Add a new comment" id="add-comment" cols="30" rows="10"></textarea>
 
-                    <button class="comment__button">COMMENT</button>
+                    <button type="submit" class="comment__button">COMMENT</button>
                 </form>
             </div>
 
@@ -155,6 +156,7 @@
         </div>
     </footer>
     
-    <script src="./scripts/index-page.js"></script>
+    <script type="module" src="./scripts/band-site-api.js"></script>
+    <script type="module" src="./scripts/index-page.js"></script>
 </body>
 </html>
