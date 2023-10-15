@@ -4,12 +4,21 @@ export class BandSiteAPI {
         this.baseURL = "https://project-1-api.herokuapp.com";
     }
 
+    likeComment() {
+
+    }
+
     async postComment(comment){
         try {
-            const response = await axios.post(`${this.baseURL}/comments?api_key=${this.apiKey}`, comment);
+            // const headers = {
+            //     headers: {
+            //         'Content-Type': 'application/json'
+            //     }
+            // }
+            const response = await axios.post(`${this.baseURL}/comments?api_key=${this.apiKey}`, comment); // add headers at end
             // console.log(response.data);
             console.log(this.getComments());
-            return this.getComments().response.data;
+            return this.getComments().response.data; 
         } catch (error){
             console.log(error);
         }
@@ -18,7 +27,7 @@ export class BandSiteAPI {
     async getComments() {
         try {
             const response = await axios.get(`${this.baseURL}/comments?api_key=${this.apiKey}`);
-            return response.data;
+            return response.data;       // use .sort for getComments method
         } catch (error){
             console.log(error);
         }
@@ -27,13 +36,30 @@ export class BandSiteAPI {
     async getShows() {
         try {
             const response = await axios.get(`${this.baseURL}/showdates?api_key=${this.apiKey}`);
-            const showData = [];
+            return response.data;
         } catch(error) {
-            console.log("Error while retrieving shows", error);
-            return error;
+            console.log(error);
         }
     }
+
+    async 
 }
+
+// post. first: url, second: data, third: header
+
+// try {
+//     const headers = {
+//         headers: {
+//             'Content-Type': 'application/json'
+//         }
+//     }
+// }
+
+// const {data} = await axios.post('/user', document.querySelector('#my-form'), {
+//     headers: {
+//       'Content-Type': 'application/json'
+//     }
+//   })
 
 // function postComment(comment){
 //     return new Promise((resolve, reject) => {
