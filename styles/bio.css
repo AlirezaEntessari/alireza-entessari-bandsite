@@ -160,16 +160,16 @@ body {
 .comment__pTag {
   color: #323232;
   font-weight: 500;
-  padding-left: 16px;
+  padding-left: 1rem;
 }
 .comment__pTag2 {
-  margin-left: 180px;
+  margin-left: 11.25rem;
   color: #AFAFAF;
 }
 .comment__pTag3 {
   color: #323232;
   width: 80%;
-  padding-left: 90px;
+  padding-left: 5.625rem;
 }
 .comment__div2 {
   border-bottom: 1px solid #E1E1E1;
@@ -177,37 +177,37 @@ body {
 .comment__img {
   background-color: #E1E1E1;
   aspect-ratio: 1;
-  padding: 32px;
+  padding: 2rem;
 }
 .comment__top {
   border-bottom: 1px solid #E1E1E1;
 }
 .comment h2 {
-  font-size: 32px;
-  padding: 24px;
+  font-size: 2rem;
+  padding: 1.5rem;
   font-weight: 500;
   color: #323232;
 }
 .comment__top--container {
   display: flex;
   justify-content: flex-start;
-  margin-bottom: 12px;
+  margin-bottom: 0.75rem;
 }
 .comment img {
   border-radius: 50%;
   width: 15%;
-  margin-left: 38px;
+  margin-left: 2.375rem;
   aspect-ratio: 1;
 }
 .comment__top--name {
-  min-height: 36px;
-  padding: 12px;
+  min-height: 2.25rem;
+  padding: 0.75rem;
 }
 .comment__top--label {
   color: #AFAFAF;
   font-weight: 500;
-  font-size: 12px;
-  padding-bottom: 4px;
+  font-size: 0.75rem;
+  padding-bottom: 0.25rem;
 }
 .comment__top--name-input {
   display: block;
@@ -215,7 +215,7 @@ body {
   background-color: #FAFAFA;
   border-color: #E1E1E1;
   width: 19.5rem;
-  padding: 12px;
+  padding: 0.75rem;
 }
 .comment__top--name-input:active {
   border: 1px solid #323232;
@@ -223,45 +223,45 @@ body {
 .comment__top--name-input::-moz-placeholder {
   color: #323232;
   font-family: "Avenir";
-  font-size: 14px;
-  padding-left: 4px;
+  font-size: 0.875rem;
+  padding-left: 0.25rem;
 }
 .comment__top--name-input::placeholder {
   color: #323232;
   font-family: "Avenir";
-  font-size: 14px;
-  padding-left: 4px;
+  font-size: 0.875rem;
+  padding-left: 0.25rem;
 }
 .comment__bottom--label {
   color: #AFAFAF;
   font-weight: 500;
-  font-size: 12px;
+  font-size: 0.75rem;
   display: block;
-  padding-bottom: 4px;
-  margin-left: 0px;
+  padding-bottom: 0.25rem;
+  margin-left: 0;
 }
 .comment__bottom {
-  margin-left: 124px;
+  margin-left: 7.75rem;
 }
 .comment__bottom--textarea {
   display: block;
-  margin-bottom: 12px;
+  margin-bottom: 0.75rem;
   width: 21rem;
   background-color: #FAFAFA;
   border-radius: 4px;
-  margin-left: 0px;
+  margin-left: 0;
 }
 .comment__bottom--textarea::-moz-placeholder {
   color: #323232;
-  font-size: 14px;
+  font-size: 0.875rem;
   font-family: "Avenir";
-  padding: 12px;
+  padding: 0.75rem;
 }
 .comment__bottom--textarea::placeholder {
   color: #323232;
-  font-size: 14px;
+  font-size: 0.875rem;
   font-family: "Avenir";
-  padding: 12px;
+  padding: 0.75rem;
 }
 .comment__bottom--textarea:active {
   border: 1px solid #323232;
@@ -271,15 +271,15 @@ body {
   color: #FFFFFF;
   border-radius: 4px;
   width: 21rem;
-  height: 40px;
+  height: 2.5rem;
   font-weight: 700;
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: 600;
-  margin-bottom: 32px;
+  margin-bottom: 2rem;
   margin-left: 0;
 }
 .comment__list {
-  padding: 16px;
+  padding: 1rem;
 }
 
 .footer {
@@ -477,9 +477,9 @@ body {
     display: inline-block;
   }
   .comment h2 {
-    font-size: 48px;
+    font-size: 3rem;
     font-weight: 500;
-    padding-left: 32px;
+    padding-left: 2rem;
   }
   .comment img {
     width: 10%;
@@ -491,48 +491,48 @@ body {
     width: 40rem;
   }
   .comment__top--container {
-    margin-left: 100px;
+    margin-left: 6.25rem;
   }
   .comment__bottom {
-    margin-left: 235px;
+    margin-left: 14.6875rem;
   }
   .comment__button {
     width: 25%;
     margin-left: 28rem;
-    height: 50px;
+    height: 3.125rem;
     border-radius: 8px;
-    font-size: 16px;
+    font-size: 1rem;
   }
   .comment__img {
-    padding: 36px;
+    padding: 2.25rem;
   }
   .comment__div {
     margin-left: 0;
-    padding: 24px 18px;
+    padding: 1.5rem 1.125rem;
     padding-bottom: 0;
   }
   .comment__div2 {
-    padding: 24px 18px;
+    padding: 1.5rem 1.125rem;
     padding-top: 0;
   }
   .comment__top--name-input::-moz-placeholder {
-    padding: 12px;
+    padding: 0.75rem;
   }
   .comment__top--name-input::placeholder {
-    padding: 12px;
+    padding: 0.75rem;
   }
   .comment__bottom--textarea::-moz-placeholder {
-    padding: 12px;
+    padding: 0.75rem;
   }
   .comment__bottom--textarea::placeholder {
-    padding: 12px;
+    padding: 0.75rem;
   }
   .comment__list {
-    padding: 36px;
-    margin-left: 36px;
+    padding: 2.25rem;
+    margin-left: 2.25rem;
   }
   .comment__pTag2 {
-    margin-left: 500px;
+    margin-left: 31.25rem;
   }
   .footer {
     background-color: #323232;
@@ -763,15 +763,15 @@ body {
     padding-bottom: 0;
   }
   .comment h2 {
-    padding: 48px;
-    margin-left: 60px;
+    padding: 3rem;
+    margin-left: 3.75rem;
   }
   .comment__top--name-input {
     width: 40rem;
   }
   .comment img {
     width: 7%;
-    margin-left: 38px;
+    margin-left: 2.375rem;
   }
   .comment__top--container {
     margin-left: 29.3%;
@@ -781,27 +781,27 @@ body {
     width: 36.5%;
   }
   .comment__bottom--label {
-    margin-left: 32px;
+    margin-left: 2rem;
   }
   .comment__bottom--textarea {
-    padding: 12px;
-    margin-left: 32px;
+    padding: 0.75rem;
+    margin-left: 2rem;
   }
   .comment__button {
     margin-left: 31.5rem;
     width: 12rem;
   }
   .comment__img {
-    padding: 32px;
+    padding: 2rem;
   }
   .comment__list {
     padding: 0 30rem;
   }
   .comment__pTag3 {
-    margin-left: 28px;
+    margin-left: 1.75rem;
   }
   .comment__pTag2 {
-    margin-left: 400px;
+    margin-left: 25rem;
   }
   .comment__div2 {
     width: 70%;

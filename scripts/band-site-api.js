@@ -10,15 +10,9 @@ export class BandSiteAPI {
 
     async postComment(comment){
         try {
-            // const headers = {
-            //     headers: {
-            //         'Content-Type': 'application/json'
-            //     }
-            // }
-            const response = await axios.post(`${this.baseURL}/comments?api_key=${this.apiKey}`, comment); // add headers at end
-            // console.log(response.data);
+            const response = await axios.post(`${this.baseURL}/comments?api_key=${this.apiKey}`, comment);
             console.log(this.getComments());
-            return this.getComments().response.data; 
+            return this.getComments().response.data;
         } catch (error){
             console.log(error);
         }
@@ -27,7 +21,7 @@ export class BandSiteAPI {
     async getComments() {
         try {
             const response = await axios.get(`${this.baseURL}/comments?api_key=${this.apiKey}`);
-            return response.data;       // use .sort for getComments method
+            return response.data.sort();       
         } catch (error){
             console.log(error);
         }
@@ -42,37 +36,5 @@ export class BandSiteAPI {
         }
     }
 
-    async 
+    
 }
-
-// post. first: url, second: data, third: header
-
-// try {
-//     const headers = {
-//         headers: {
-//             'Content-Type': 'application/json'
-//         }
-//     }
-// }
-
-// const {data} = await axios.post('/user', document.querySelector('#my-form'), {
-//     headers: {
-//       'Content-Type': 'application/json'
-//     }
-//   })
-
-// function postComment(comment){
-//     return new Promise((resolve, reject) => {
-//         const response = axios.post(`${this.baseURL}/comments${this.apiKey}`, comment);
-//         if(response){
-//             console.log(response);
-//             resolve(response);
-//         }else {
-//             reject("Comment failed to post.")
-//         }
-//     })
-// }
-
-
-
-// export { BandSiteAPI };

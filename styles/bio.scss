@@ -160,18 +160,18 @@ body {
     &__pTag {
       color: #323232;
       font-weight: 500;
-      padding-left: 16px;
+      padding-left: 1rem;
     }
 
     &__pTag2 {
-      margin-left: 180px;
+      margin-left: 11.25rem;
       color: #AFAFAF;
     }
 
     &__pTag3 {
       color: #323232;
       width: 80%;
-      padding-left: 90px;
+      padding-left: 5.625rem;
     }
 
     &__div2{
@@ -181,7 +181,7 @@ body {
     &__img{
       background-color: #E1E1E1;
       aspect-ratio: 1;
-      padding: 32px;
+      padding: 2rem;
 
     
     }
@@ -192,8 +192,8 @@ body {
 
 
     h2 {
-      font-size: 32px;
-      padding: 24px;
+      font-size: 2rem;
+      padding: 1.5rem;
       font-weight: 500;
       color: #323232;
     }
@@ -201,26 +201,26 @@ body {
     &__top--container{
       display: flex;
       justify-content: flex-start;
-      margin-bottom: 12px;
+      margin-bottom: 0.75rem;
     }
 
     img {
       border-radius: 50%;
       width: 15%;
-      margin-left: 38px;
+      margin-left: 2.375rem;
       aspect-ratio: 1;
     }
 
     &__top--name {
-      min-height: 36px;
-      padding: 12px;
+      min-height: 2.25rem;
+      padding: 0.75rem;
     }
 
     &__top--label {
       color: #AFAFAF;
       font-weight: 500;
-      font-size: 12px;
-      padding-bottom: 4px;
+      font-size: 0.75rem;
+      padding-bottom: 0.25rem;
     }
 
     &__top--name-input {
@@ -229,7 +229,7 @@ body {
       background-color: #FAFAFA;
       border-color: #E1E1E1;
       width: 19.5rem;
-      padding: 12px;
+      padding: 0.75rem;
     }
 
     &__top--name-input:active {
@@ -239,37 +239,37 @@ body {
     &__top--name-input::placeholder {
       color: #323232;
       font-family: 'Avenir';
-      font-size: 14px;
-      padding-left: 4px;
+      font-size: 0.875rem;
+      padding-left: 0.25rem;
     }
 
     &__bottom--label {
       color: #AFAFAF;
       font-weight: 500;
-      font-size: 12px;
+      font-size: 0.75rem;
       display: block;
-      padding-bottom: 4px;
-      margin-left: 0px;
+      padding-bottom: 0.25rem;
+      margin-left: 0;
     }
 
     &__bottom {
-      margin-left: 124px;
+      margin-left: 7.75rem;
     }
 
     &__bottom--textarea {
       display: block;
-      margin-bottom: 12px;
+      margin-bottom: 0.75rem;
       width: 21rem;
       background-color: #FAFAFA;
       border-radius: 4px;
-      margin-left: 0px;
+      margin-left: 0;
     }
 
     &__bottom--textarea::placeholder {
       color: #323232;
-      font-size: 14px;
+      font-size: 0.875rem;
       font-family: 'Avenir';
-      padding: 12px;
+      padding: 0.75rem;
     }
 
     &__bottom--textarea:active{
@@ -282,16 +282,16 @@ body {
       color: #FFFFFF;
       border-radius: 4px;
       width: 21rem;
-      height: 40px;
+      height: 2.5rem;
       font-weight: 700;
-      font-size: 16px;
+      font-size: 1rem;
       font-weight: 600;
-      margin-bottom: 32px;
+      margin-bottom: 2rem;
       margin-left: 0;
     }
 
     &__list {
-      padding: 16px;
+      padding: 1rem;
     }
 
 
@@ -538,9 +538,9 @@ body {
 
     .comment {
       h2 {
-        font-size: 48px;
+        font-size: 3rem;
         font-weight: 500;
-        padding-left: 32px;
+        padding-left: 2rem;
       }
 
       img {
@@ -556,53 +556,53 @@ body {
       }
 
       &__top--container {
-        margin-left: 100px;
+        margin-left: 6.25rem;
       }
 
       &__bottom {
-        margin-left: 235px;
+        margin-left: 14.6875rem;
       }
 
       &__button {
         width: 25%;
         margin-left: 28rem;
-        height: 50px;
+        height: 3.125rem;
         border-radius: 8px;
-        font-size: 16px;
+        font-size: 1rem;
       }
 
       &__img {
-        padding: 36px;
+        padding: 2.25rem;
       }
 
       &__div {
         margin-left: 0;
-        padding: 24px 18px;
+        padding: 1.5rem 1.125rem;
         padding-bottom: 0;
       }
 
 
       &__div2{
-        padding: 24px 18px;
+        padding: 1.5rem 1.125rem;
         padding-top: 0;
       
       }
 
       &__top--name-input::placeholder{
-        padding: 12px;
+        padding: 0.75rem;
       }
 
       &__bottom--textarea::placeholder{
-        padding: 12px;
+        padding: 0.75rem;
       }
 
       &__list {
-        padding: 36px;
-        margin-left: 36px;
+        padding: 2.25rem;
+        margin-left: 2.25rem;
       }
 
       &__pTag2{
-        margin-left: 500px;
+        margin-left: 31.25rem;
       }
      
     }
@@ -887,8 +887,8 @@ body {
     .comment {
 
       h2 {
-        padding: 48px;
-        margin-left: 60px;
+        padding: 3rem;
+        margin-left: 3.75rem;
       }
 
       &__top--name-input{
@@ -897,7 +897,7 @@ body {
 
       img {
         width: 7%;
-        margin-left: 38px;
+        margin-left: 2.375rem;
       }
 
       &__top--container {
@@ -910,13 +910,13 @@ body {
       }
 
       &__bottom--label {
-        margin-left: 32px;
+        margin-left: 2rem;
       }
 
 
       &__bottom--textarea{
-        padding: 12px;
-        margin-left: 32px;
+        padding: 0.75rem;
+        margin-left: 2rem;
       }
 
       &__button{
@@ -925,7 +925,7 @@ body {
       }
 
       &__img {
-        padding: 32px;
+        padding: 2rem;
       }
 
       &__list {
@@ -933,11 +933,11 @@ body {
       }
 
       &__pTag3 {
-        margin-left: 28px;
+        margin-left: 1.75rem;
       }
 
      &__pTag2 {
-      margin-left: 400px;
+      margin-left: 25rem;
      }
 
       &__div2 {
